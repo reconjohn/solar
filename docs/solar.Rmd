@@ -1,5 +1,5 @@
 ---
-title: "Rooftop Solar Research"
+title: "Clean Technology Distribution"
 author: "Yohan Min"
 
 date: "Updated `r Sys.Date()`"
@@ -35,12 +35,25 @@ output:
 knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 ```
 
+# Research Overview {#index}
 
-# 1. Social Equity in Clean Energy Policies {#index}
+## Research Objectives 
+
+* Verifying social equity due to the uneven distribution of clean energy technologies
+* Verifying program impact on clean energy technology diffusion 
+* Verifying Peer effect on clean energy technology diffusion 
+* Identifying communities with high diffusion prediction
+
+![Research Diagram](diagram.png)
+
+# 1. Social Equity in Clean Energy Policies 
 
 ## Motivation 
+
+* Climate change has caused clean energy policies
+* Rapid transition to a new enery systems 
+* Uneven distribution of new energy systems 
 * Energy divide (e.g. Digital divide)
-* Clean energy policy
 * Social equity
 
 ## Observation 
@@ -54,12 +67,11 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 ## Literature review 
 
-* Disscussion on the most significant factors on the clean energy technologies 
+* Disscussion on the most significant factors on the clean energy technology diffusion
 
 ## Methods 
 
-* Spatial autocorrelation
-* Spatial regression
+* Spatial autocorrelation regression model 
 * Factor analysis (dimension reduction)
 * Cluster analysis (grouping)
 
@@ -75,19 +87,18 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 ## Contribution 
 
+* Current uneven distribution of clean energy technologies presenting social equity issue
 * The most significant factors to the uneven distribution were identified
 * Spatial autocorrelation were addressed 
-* Similar variables were combined by Factor analysis 
-* Socio-demographic data from ACS could be used as predictors for other regions
-* Sensitive regions were identified 
-* Policy maker could refer to this results
+* Socio-demographic data from Sensus could be used as predictors for other regions
+* Sensitive regions identified for policy makers to address social equity for effective and even distribution
 
-# 2. Peneration Model (PV, and EV)
+# 2. Program Impact/ Peer Effect on Diffusion (PV, and EV)
 
 ## Motivation 
 
 * Differnt diffusion trend by region
-* Temporal increase of variables in trend
+* Local community based program impact on diffusion 
 
 ## Observation 
 
@@ -96,7 +107,7 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 ## Hypotheses 
 
-* A certain policy may affect the diffusion trend different among regions 
+* A certain program may affect the diffusion trend different among regions 
 
 ## Literature review 
 
@@ -108,11 +119,13 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 * Time series analysis
 * Event based regression 
-* Applying traditional diffussion model 
+* Hierachical regression 
 
 ## Result
 
-* The most significant factor influencing the diffusion trend is the community involvement  
+* The identified local community based program influencing the diffusion trend significantly
+* Sptio-temporal peer effect is significant for diffusion
+
 
 ## Discussion 
 
@@ -122,22 +135,19 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 ## Contribution 
 
-* The most significant factor to the diffusion was identified
-* Diffusion model were addressed on PV and EV
-* New finding on importance of community involvement on diffusion 
-* Prediction model was suggested 
-* Policy maker could refer to this results to increase PV and EV diffusion while saving the acquisition cost 
+* The most significant factor to the diffusion was identified (local community based program and peer effect)
+* Diffusion model were suggsted on PV and EV
+* New finding on importance of community involvement and peer effect on diffusion 
+* Policy makers can increase diffusion while saving the acquisition cost 
 
 
-# 3. Identifying Regions Vulnerable to Variable Electric Balance 
+# 3. Identifying Regions with Higher Diffusion Prediction 
 
 ## Motivation 
 
-* Different diffusion pattern between PV and EV 
+* Different diffusion pattern between PV and EV and by region
 * Large amount of variable renewable sources leads to development of storage and demand-side solutions
 * Attention should be regions with higher decentralization trend due to the supply-demand balance 
-* Differnt diffusion trend by region
-* Variable temporal increase in trend
 
 ## Observation 
 
@@ -145,7 +155,7 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 ## Hypotheses 
 
-* A certain region needs more attention due to addition of clean energy technologies
+* A certain region needs more attention due to addition of variable clean energy technologies
 
 ## Literature review 
 
@@ -171,9 +181,10 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 
 ## Contribution 
 
-* The most significant region was identified
+* The most expected significant region was identified due to higher diffusion rate
 * Prediction model was suggested to estimate the future impact of addtion of PV and EV
-* Policy maker and utilities could refer to this results to plan their investment on systems of distribution and scalable renewable energy
+* Policy makers and utilities referring to this result to plan their investment on systems of distribution and scalable renewable energy
+
 
 # Reference 
 

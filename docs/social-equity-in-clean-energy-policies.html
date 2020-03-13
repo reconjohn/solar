@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Research Methodology | Clean Technology Distribution</title>
-  <meta name="description" content="9 Research Methodology | Clean Technology Distribution" />
+  <title>2 1. Social Equity in Clean Energy Policies | Clean Technology Distribution</title>
+  <meta name="description" content="2 1. Social Equity in Clean Energy Policies | Clean Technology Distribution" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Research Methodology | Clean Technology Distribution" />
+  <meta property="og:title" content="2 1. Social Equity in Clean Energy Policies | Clean Technology Distribution" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Research Methodology | Clean Technology Distribution" />
+  <meta name="twitter:title" content="2 1. Social Equity in Clean Energy Policies | Clean Technology Distribution" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="literature-review-3.html"/>
-<link rel="next" href="contribution-3.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="program-impact-peer-effect-on-diffusion-pv-and-ev.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -131,25 +131,77 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="research-methodology" class="section level1">
-<h1><span class="header-section-number">9</span> Research Methodology</h1>
-<p>This study focuses on the City of Seattle open data portal which keeps the records of electrical permits issued between 2003 and 2018 in Seattle. Electrical permits are required when residential houses want to install EV chargers on their properties. The present study employed advanced data mining techniques to identify residential EV charger installation among the data sets. The data include geographical coordinates (latitudes and longitudes), dates of the EV charger installations, and EV charger contractors who installed the systems. Mapping the points of residential EV charger in the region allows to verify a certain pattern in the installations. The densities of the data points, normalized by the density of the total households shows a clustered pattern, where the value means scaled density value.</p>
-<p>Point patterns could be identified by G estimation which could be compared with complete spatial randomness (CSR). The G estimation function (EDF) of the nearest neighbor distances is defined as below, where di represents the distance from the i-th event to the nearest other event in A and n is the number of points. It simulated with 99 realizations under the null (resampling from n points) and formed the G estimate for each set, and produced Monte Carlo envelopes. The estimates being off the envelopes indicates the distribution of EV chargers is far from randomness.</p>
-<p>After point data was aggregated to the related census tracks, the data was examined in terms of the socioeconomic and housing characteristics based on the American Community Survey (ACS) of the census (2011 - 2015 ACS 5-Year estimates). The rate of the residential EV charger installations in each census track is the dependent variable in this study. Rest of variables are the proportions given census tracts.</p>
-<p>The expected rate of residential EV charger per each census track is estimated based on the total number of housing units in Seattle and its residential EV charger numbers. Standardized Installation Ratio (SIR) is defined by the number of residential EV chargers over the expected number of residential EV chargers given the estimated proportion. In this context, SIR refers to the total number of residential EV charger over the total number of housing units in Seattle. The distribution of each census tract SIR shows a clustered pattern similar to that of the previous point data of residential EV chargers.</p>
-<p>The residential EV charger rate is assumed to be associated with a Poisson count model considering its rare proportion with respect to the denominator (the total housing units) in a census track in addition to the fact that the number of residential EV chargers itself, is count data. The residuals, after fitting the Poisson model, show clustering with the similar pattern of SIR distribution across census tracks. This indicates that there is strong evidence of spatial dependency among the regions in Seattle.</p>
-<p>A Moran’s I test identified global clustering in the distribution of the rates of residential EV charger with a very small p-value with the test statistic, 7.13. This confirms that the residential EV charger rate across census tracks is clustered. This clustering trend can be alleviated by fitting a model with appropriate covariates with the similar characteristics. For that, socioeconomic and housing characteristics were examined to identify the most proper covariates. Having verified that there is a spatial pattern in the residential EV charger rate, there might be related or shared factors in the socioeconomic and housing characteristics of the same region. It shows that housing, economy, and social inequality variables pairwise correlations.</p>
-<p>Dimension reduction of covariates was performed by a factor analysis in consideration of avoiding multicollinearity. The newly generated factors were fitted to models to estimate the residential EV charger rates. Residuals were checked afterwards to see if there is still a clustered pattern. If there is still a clustered pattern, it means that the model does not address the spatial dependency. The factor analysis identifies the similar variables in terms of housing unit structures (single/multi-family house unit), housing ownership types (rent/owned), economic status (income levels and housing values), and inequality index. Housing unit structures show the similar trend of housing tenure while housing median value, high income class proportion, and household median incomes follow the similar pattern representing economic status. Residential EV charger rates and the factors from the dimension reduction show strong correlations. Generalized log-linear model (GLM) fits the data based on the factors, ML1, ML2 and ML3 without consideration of the spatial autocorrelation. Note that ML3, which was negatively correlated with the EV charger rates, becomes positively correlated after the model fit because predictors, ML1 and ML2 affected ML3 in the model. ML2 seems to be the most significant predictor with 0.43 estimated coefficient to the EV charger rate in Seattle.</p>
-<p>A Poisson lognormal spatial model, especially using BYM2 method, is tested to address any residual clustering issues using Bayesian method, Integrated Nested Laplace Approximations (INLA), which combines Laplace approximations and numerical integration in a very efficient manner. INLA enables Generalized Linear Mixed Models (GLMMs) addressing temporal and spatial error terms. An Intrinsic Conditional Auto-Regressive (ICAR) model addressed spatial autocorrelation.</p>
-<p>K-means clustering analysis, afterward, identifies similar regions in terms of socioeconomic and housing patterns in census tracks. It should be noted that K-means clustering does not take into account the EV charger rates for defining the Euclidean distance among data points, thus the clustered groups are determined only by the three predictors, ML1, ML2 and ML3. This will help to see the difference between the clustered groups and EV charger rates. Finally Geographically weighted regression (GWR) is used to address the local variation of coefficients of predictors by taking into account the local spatial dependency in order to locate regions more sensitive to each predictor.</p>
+<div id="social-equity-in-clean-energy-policies" class="section level1">
+<h1><span class="header-section-number">2</span> 1. Social Equity in Clean Energy Policies</h1>
+<div id="motivation" class="section level2">
+<h2><span class="header-section-number">2.1</span> Motivation</h2>
+<ul>
+<li>Climate change has caused clean energy policies</li>
+<li>Rapid transition to a new enery systems</li>
+<li>Uneven distribution of new energy systems</li>
+<li>Energy divide (e.g. Digital divide)</li>
+<li>Social equity</li>
+</ul>
+</div>
+<div id="observation" class="section level2">
+<h2><span class="header-section-number">2.2</span> Observation</h2>
+<ul>
+<li>Mapping clean energy technologies (i.e. PV and EV)</li>
+<li>Uneven distribution (clustering pattern)</li>
+</ul>
+</div>
+<div id="hypotheses" class="section level2">
+<h2><span class="header-section-number">2.3</span> Hypotheses</h2>
+<ul>
+<li>Uneven distirubtion is related to socio-demographic characteristics</li>
+</ul>
+</div>
+<div id="literature-review" class="section level2">
+<h2><span class="header-section-number">2.4</span> Literature review</h2>
+<ul>
+<li>Disscussion on the most significant factors on the clean energy technology diffusion</li>
+</ul>
+</div>
+<div id="methods" class="section level2">
+<h2><span class="header-section-number">2.5</span> Methods</h2>
+<ul>
+<li>Spatial autocorrelation regression model</li>
+<li>Factor analysis (dimension reduction)</li>
+<li>Cluster analysis (grouping)</li>
+</ul>
+</div>
+<div id="result" class="section level2">
+<h2><span class="header-section-number">2.6</span> Result</h2>
+<ul>
+<li>The most significant factors are housing stability, and economic status</li>
+</ul>
+</div>
+<div id="discussion" class="section level2">
+<h2><span class="header-section-number">2.7</span> Discussion</h2>
+<ul>
+<li>Comparison with other papers</li>
+<li>Uniqueness of this research</li>
+<li>Shortcomings and future research opportunities</li>
+</ul>
+</div>
+<div id="contribution" class="section level2">
+<h2><span class="header-section-number">2.8</span> Contribution</h2>
+<ul>
+<li>Current uneven distribution of clean energy technologies presenting social equity issue</li>
+<li>The most significant factors to the uneven distribution were identified</li>
+<li>Spatial autocorrelation were addressed</li>
+<li>Socio-demographic data from Sensus could be used as predictors for other regions</li>
+<li>Sensitive regions identified for policy makers to address social equity for effective and even distribution</li>
+</ul>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="literature-review-3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="contribution-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="program-impact-peer-effect-on-diffusion-pv-and-ev.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
