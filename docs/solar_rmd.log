@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.13)  18 MAR 2020 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.13)  20 MAR 2020 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,87 +574,92 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 {c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/p
 dftex.map}]
-<Diffusion.png, id=149, 669.50125pt x 560.0925pt>
+<Diffusion.png, id=129, 669.50125pt x 560.0925pt>
 File: Diffusion.png Graphic file (type png)
 <use Diffusion.png>
 Package pdftex.def Info: Diffusion.png  used on input line 151.
 (pdftex.def)             Requested size: 469.77141pt x 393.00217pt.
-[2 <./Diffusion.png>] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-28.
+[2 <./Diffusion.png>] [3]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+80.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-28.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+80.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-828.
+280.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-828.
+280.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 828.
+(Font)              <12> on input line 280.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 828.
+(Font)              <8> on input line 280.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 828.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 828
+(Font)              <6> on input line 280.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 280
 .
 
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.
 fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 828
+LaTeX Font Info:    Trying to load font information for U+msb on input line 280
 .
 
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.
 fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [13]
-Overfull \hbox (275.17168pt too wide) in paragraph at lines 916--921
-\T1/lmr/m/n/12 (n.d.). NPR.org, []$https : / / www . npr . org / 2019 / 12 / 15
- / 784483810 / powered-[]by-[]faith-[]religious-[]groups-[]emerge-[]as-[]a-[]co
-nduit-[]for-[]a-[]just-[]solar-[]boom$[]
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 937.
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 937.
+) [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1015.
+[16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1015.
 (./solar_rmd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 937.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 937.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1015.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1015.
+
 Package rerunfilecheck Info: File `solar_rmd.out' has not changed.
-(rerunfilecheck)             Checksum: 6982A777D3BF3D7F4FF2E90D3F551E9B;5384.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 937.
+(rerunfilecheck)             Checksum: 3683D603BD631085BDEB8F5EC1ECB14C;5066.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1015.
  ) 
 Here is how much of TeX's memory you used:
- 10931 strings out of 483161
- 162646 string characters out of 5963171
- 419884 words of memory out of 5000000
- 25688 multiletter control sequences out of 15000+600000
+ 10913 strings out of 483161
+ 162518 string characters out of 5963171
+ 420756 words of memory out of 5000000
+ 25678 multiletter control sequences out of 15000+600000
  573247 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,4n,39p,541b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,39p,541b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
-ts1.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/
-lm/lm-ec.enc}<c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmbx12.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmr12.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf
--dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyT
-eX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on solar_rmd.pdf (14 pages, 169387 bytes).
+mathit.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvi
+ps/lm/lm-rm.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/en
+c/dvips/lm/lm-mathsy.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist
+/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texm
+f-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/Users/Yohan_Min/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Yohan_Min/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/Yohan_Min/AppDa
+ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/Users/Yohan_M
+in/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users
+/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
+c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr
+17.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publi
+c/lm/lmr6.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
+1/public/lm/lmr8.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fon
+ts/type1/public/lm/lmri12.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on solar_rmd.pdf (16 pages, 236526 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
