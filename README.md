@@ -15,7 +15,10 @@ Second, reliability of the power supply for the community can inadvertently be a
 
 The study identifies socially and technically vulnerable communities with regards to the uneven and unbalanced distribution of clean energy technologies (PV and EV) in consideration of resilience against climate change and reliability of energy systems. Therefore, the study will help policy makers to better support underserved communities with limited resources by devising equitable clean energy policies. As a result, it will promote desirable distribution in consideration of appropriate boundaries of reliable electrical systems in regard to clean energy technologies.
 
-![Research Overview](Diffusion.png)
+![Research Overview](docs/Diffusion.png)
+
+[Proposal](https://github.com/reconjohn/solar/blob/master/docs/solar_rmd.pdf)
+
 
 
 
