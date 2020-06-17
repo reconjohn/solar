@@ -1,5 +1,5 @@
 ---
-title: "Diffusion Dynamics of Clean Energy Technologies in Residential Built Environments"
+title: "Diffusion Dynamics of Clean Energy Technologies in the Residential Built Environments"
 author: "Yohan Min"
 
 date: "Updated `r Sys.Date()`"
@@ -35,17 +35,26 @@ output:
 knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE)
 ```
 
-# Research Overview {#index}
+# Abstract {#index}
 
-## Abstract 
+```
+Energy transition may lead to:
+* Uneven distribution – energy divide, social equity, electric bill burden, regressive taxation
+* Reliability of the grid due to stochastic characteristics of clean energy technologies
+```
 
-The recent global climate change has led to the development of various clean energy polices such as government subsidies, regulatory measures, Feed-in tariffs, net metering, and technical support for diffusion of clean energy technologies - photovoltaics (PV) and electric vehicles (EV). Clean energy technologies are proved to increase resiliency in response to the interruption from climate change. However, two concerns have been raised with the current rapid transition of energy systems. First, the transition can inadvertently lead to uneven distribution of energy services across the socioeconomic status of the communities, and accordingly have the potential to significantly impact on how communities respond to any undesirable climate change-related events. Uneven distribution of the new energy systems could be described as “energy divide” (inequalities in access to energy services) which is the similar to “digital divide” in the late 20th century where uneven distribution of telecommunication infrastructure caused social equity issue where social equity is defined as equal opportunities for different people living in different places. Second, reliability of power supply for the community can inadvertently be affected by the intermittent power generation of PV systems and uncertain charging schedules for EV. Especially regions with higher decentralization trend need attention due to lack of active generation and demand connected. In response to the two concerns, this proposal aims to study diffusion dynamics of clean energy technologies (PV and EV) in the residential built environments. The study targets to help policy makers to better support underserved communities under limited resources by devising equitable clean energy policies while promoting the fair distribution in consideration of reliable electrical system in regard to clean energy technologies. The objectives of the proposed research include: 
+The recent global climate change has led to the development of various clean energy policies and technologies. Clean energy technologies are proven to increase resilience in response to the impacts of climate change in addition to their economic, health and environmental benefits. However, two main concerns have emerged with the current rapid transition of energy systems toward clean energy technologies. 
 
-1.	To investigate the current status of distribution of clean energy technologies (PV and EV) and their relationship with socio-economic characteristics; 
-2.	To validate policy interruption impact on their diffusion dynamics; 
-3.	To identify any peer effects on diffusion trends; and 
-4.	To develop a robust spatiotemporal prediction model based on the identified significant factors, which can help identify the most vulnerable communities with regards to the uneven and unbalanced distribution of clean energy technologies. 
-  
+First, the transition can inadvertently result in the uneven distribution of clean energy technologies, and accordingly has potential to disproportionately influence how communities respond to any undesirable climate change-related events. Such uneven distribution of new energy systems could be described as the “energy divide” (inequalities in access to energy services) which is similar to the “digital divide” in the late 20th century where uneven distribution of telecommunication infrastructure caused issues in social equity, which aims atto provide equal opportunities to people regardless of who they are and where they live. To make matters worse, having more distributed clean energy technologies requires improvement of the grid system leading to higher electricity bills as a form of regressive taxation to low-income households, who may not have access to these technologies. 
+
+Second, reliability of the power supply for the community can inadvertently be affected by intermittent power generation of photovoltaic systems (PV) and uncertain charging schedules of electric vehicles (EV). This increases challenges to system operators requiring improved forecasting, new operating tools ensuring stability and coordination between systems. This is especially true for regions with higher decentralization trends due to the lack of active generation and demand connected as the regions require more diverse and less correlated power sources, energy storage and demand participation. In response to these two concerns, this study aims to study diffusion dynamics of clean energy technologies (PV and EV) in the residential built environment. The objectives of the proposed study include:
+
+1.	To investigate the current status of distribution of clean energy technologies (PV and EV) and their relationships with socioeconomic and built environment characteristics of local communities (i.e., based on census tracts); 
+2.	To validate the diffusion patterns of PV and EV;
+3.	To identify local advocacy, peer effects and spillovers on diffusion trends; and 
+4.	To develop a robust spatiotemporal prediction model based on the identified factors. 
+
+The study identifies socially and technically vulnerable communities with regards to the uneven and unbalanced distribution of clean energy technologies (PV and EV) in consideration of resilience against climate change and reliability of energy systems. Therefore, the study will help policy makers to better support underserved communities with limited resources by devising equitable clean energy policies. As a result, it will promote desirable distribution in consideration of appropriate boundaries of reliable electrical systems in regard to clean energy technologies. Figure 1 summarizes the research framework of the proposed study. 
 
 ![](Diffusion.png)
 
@@ -53,59 +62,67 @@ The recent global climate change has led to the development of various clean ene
 
 ## Introduction
 
-**Key Words:**
 
-* Climate change causing clean energy policies
-* Rapid transition to a new emery systems 
-* Uneven distribution of new energy systems 
-* Energy divide (e.g. digital divide)
-* Social equity
+```
+Uneven distribution (energy divide) leads to social equity issues: 
+* Spatial patterns of distribution of PV systems and EV chargers 
+* Relationship with socio-economic and built environment characteristics 
+```
 
+## Problem Statement
 
+Clean energy technologies have been introduced and utilized all over the world for resilient and sustainable energy systems in response to climate change. This rapid transition to the new energy system could lead to undesirable impacts on some communities as shown in the case of telecommunication where the *digital divide* has excluded vulnerable groups of people from knowledge-based societies and economies (Chen and Wellman 2004). In fact, the European Union (EU) has already experienced that the uneven deployment of energy poverty and socioeconomic characteristics are correlated and the spatial and social distribution of this relationship is highly uneven (Bouzarovski and Tirado Herrero 2017). In this context, it is important to review how residential PV and EV are spatially distributed with a goal of understanding the spatial trends of how clean energy policies and incentives have been implemented. This can help identify issues related to social equity; that is, such uneven distribution may indicate particular communities being left out from the recent development of clean energy technologies, particularly those who are more vulnerable to the impacts of climate change.
 
-###  Energy divide 
+## Literature Review
 
-Clean energy technologies have been introduced and utilized all over the world seeking more reliable and sustainable energy systems in response to climate change. This rapid transition to the new energy system could lead to undesirable impacts on some communities as shown in the case of telecommunication where the digital divide has excluded vulnerable groups of people from knowledge-based societies and economies (Chen and Wellman 2004). In fact, European Union (EU) has already experienced that the uneven deployment of energy poverty and social distribution are correlated where spatial and social distribution is highly uneven (Bouzarovski and Tirado Herrero 2017). In this context, it is necessary to review how residential PV and EV are spatially distributed with a goal to understand the spatial trends of how clean energy policies and incentives have been implemented. This may help identify issues related to social equity; uneven distribution may indicate particular communities being left out from the recent distribution of clean energy technologies, particularly those who are more vulnerable to the climate change.
+The Clean Energy Transformation Act (CETA) was signed into law by the Governor of Washington in 2019 to remove greenhouse gas emission from electricity supplies by 2045. It plans to eliminate coal power plants by 2025, at least 80% of electricity should be renewable or non-emitting while up to 20% could be and alternative compliance option, and finally 100% of electricity should be renewable or non-emitting by 2045. Furthermore, RCW 19.405.120 focuses on low-income energy assistance by requiring utilities in Washington to provide energy assistance funding and programs to low-income households from July, 2021. Furthermore, RCW 19.405 aims at equitable distribution of benefits:
 
-### EV charging distribution 
+> “..ensure that all customers are benefiting from the transition to clean energy: Through the equitable distribution of energy and non-energy benefits and reduction of burdens to vulnerable populations and highly impacted communities; long-term and short-term public health and environmental benefits and reduction of costs and risks; and energy security and resiliency.” - RCW 19.405.030(8)
 
-Most charging occurs at home and 50% of EV users charge exclusively at home (Smart 2015). Accommodating home charging opportunities would contribute to EV adoption similar to the case of rooftop solar, where 49% of households are not able to install the solar system due to not owning the building, living in multi-family unit, and lack of roof space (Feldman 2015). In this context, it is necessary to review how residential charging infrastructures are spatially distributed to understand how clean energy policies and incentives have been implemented. This may identify an issue related to social equity; uneven distribution may indicate particular communities being left out of using clean energy technologies, particularly those more vulnerable to the climate change. 
+The purpose of energy assistance is to reduce the energy burden of utility customers for weatherization and ownership in distributed energy resources (RCW 19.405.020(15)). In this regard, the Washington State Department of Commerce (DoC) will investigate the demographic characteristics of households and housing characteristics served by energy assistance funding and programs (RCW 19.405.020(3)(a)). 
 
-### Equity concerns
+While local governments started to enact policies in consideration of the equitable distribution of energy and its benefits, they are still in the early stage of evaluating clean energy technologies. Therefore, it is imperative to address concerns and issues associated with social equity related to energy access, affordability, security, etc. (i.e., "energy justice"). Energy policies have been dealing with only one portion of the entire energy system while an energy system requires multi- and trans-disciplinary based on practices of integration (Heffron and McCauley 2017). ‘Systems’ thinking was suggested including energy’s externalities for transition to low-carbon sources spanning resource mining, transmission, and waste in social, economic, and environmental impacts (Jenkins et al. 2016). 
 
-The previous empirical analyses confirm that currently, there are communities left out from the benefit of one of clean energy technologies, PV and EV. This raises an issue on social justice. From the utilitarian perspective, it is more efficient to use limited resources to maximize the global benefits thus, current distribution of clean energy technologies as a result of the present clean energy policies, seems to get along with this principle as opposed to the social justice. In short, current clean energy policies or incentives are based on utilitarian principle. For example, rebates, tax credits, production performance credits, property tax exemptions, and sale tax exemptions are for those who are able to finance solar systems in addition to possessing their own houses. Opportunities to take part in the incentives are hard for those who can’t afford clean energy technologies.
+In this regard, energy justice has been discussed in terms of affordable energy, energy security, fuel poverty, energy vulnerability on distributional unfairness, and politics of energy infrastructure (Fuller and McCauley 2016). Energy justice has been further framed from environmental and climate justice. Energy justice from an inter-disciplinary perspective has recently received significant attention from justice scholars (Jenkins et al. 2016). As a result, energy justice has been conceptualized as one specific academic fields in energy with the concern of equal distribution of costs imposed on communities and benefits from the access of the modern energy in addition to procedures of inclusive decision making (Sovacool et al. 2015). Heffron and McCauley (2017) introduced restorative justice to apply in practice through environmental impact assessments (when a project is designed or built), social-license-to-operate (with local communities over the life-span of the energy infrastructure), and energy financial reserve obligation to ensure the financial capacity to end the energy infrastructure. The authors suggested more just energy trilemma — economics, politics in terms of energy security, and environment for climate change mitigation — targeting on energy law and policy for energy justice. Green investment funds is an example for this energy trilemma (Heffron and McCauley 2017). 
+
+Sovacool and Dworkin (2015) discussed eight principles of a decision-making tool: (1) availability for energy security of supply; (2) affordability such as stable prices; (3) due process of stakeholder's participation in policy making process; (4) good governance with information, accountability, and transparency; (5) sustainability, i.e., meeting the needs of the present without compromising the needs of future generations; (6) intergenerational equity for present and future generations; (7) intragenerational equity for different communities' access to energy; (8) and responsibility for the environment, climate change, future generation, and non-human species. Moreover, as a decision-making tool for energy justice, Sovacool et al. (2017) suggested two more principles: resistance, which is standing up to injustice, and intersectionality which is intertwined with socioeconomic, political and environmental factors. 
+
+Bouzarovski and Simcock (2017) addressed the lack of geography in consideration of the injustice of energy poverty in terms of spatial justice, the geographical dimensions of inequality and inequity. Spatial justice was discussed in regard to landscapes of material deprivation for infrastructure and the built environment; geographic underpinnings of energy affordability (i.e., energy prices and household incomes); vicious cycles of vulnerability as poor health occurs due to material and socioeconomic spatial inequalities; and spaces of misrecognition, which is defined by recognition injustice through ignoring certain groups, affecting household practices. They claim energy transitions are generators of geographically uneven social, political and environmental displacements leading to vulnerability of particular groups (Bouzarovski and Simcock 2017).
+
+Distributed energy systems have potential to reduce energy poverty (Sovacool et al. 2014) that can help promote social equity. In regard to distribution of energy production, the uneven distribution of production facilities has mainly been framed in environmental justice while an affordable energy access has been framed in terms of income equality and low carbon transitions for energy consumption (Fuller and McCauley 2016). Moreover, proper distribution (distributive justice or redistribution) and impartiality in decision-making (procedural justice and empowerment) are interconnected in that energy justice should be first considered for those that the policies are intended to benefit (Sovacool and Dworkin 2015).
+
+Previous studies have found factors or drivers to the diffusion of clean energy technologies such as socioeconomic characteristics, built environment, peer effects, climate, local regulations and policy variables - spatial neighboring effects, built environment, and policy variables (Graziano and Gillingham 2015); higher income, home owners (Keirstead 2007); home ownership and neighborhood effects (Hofierka et al. 2014); owner occupation, single family versus multifamily development, suburban and rural location, preexisting PV installations (Graziano and Gillingham 2015); population density, single family home (Muller and Rode 2013); additional installation in neighborhood, stronger peer effect (Bollinger et al. 2012); Peer effects such as imitation, herd behavior, and social interaction (Scott et al. 2011); transaction cost such as time spent on negotiating (Seel et al. 2014); and solar irradiation (Schaffer and Brun 2015). 
+
+The previous empirical analyses confirm that currently, there are communities not receiving the benefits of clean energy technologies while having cost burden to adopt these technologies. This raises an issue of social justice on the current distribution of clean energy technologies in present clean energy policies. For example, rebates, tax credits, production performance credits, property tax exemptions, and sales tax exemptions are forms of regressive taxation benefiting wealthier households by taxation on populations including low-income households which led to energy inequalities (Poruschi et al. 2019). Opportunities to take part in incentives are hard for those who cannot afford to invest in clean energy technologies. In this regard, a comprehensive, multi-scalar strategic approach spanning the whole energy system in regard to the life cycle is suggested as a less regressive means than carbon taxes or flat levies on energy bills for equity (Bouzarovski and Simcock 2017). 
 
 ## Methodology 
 
-While a number of studies have investigated various aspects of the policies designed to support PV system and EV charger installations, there is still a dearth of studies aimed at investigating the impact of such policies on social equity. Two unanswered questions have emerged: (1) were there certain communities inadvertently marginalized from incentive opportunities? and (2) do those current policies help to encourage the social equity in clean energy technologies? To answer these questions, the research aims to perform a spatial analysis of the distribution of PV and EV charger installed-buildings in terms of housing and socioeconomic characteristics based on the census tracks of Seattle, WA. In particular, this research aims to explore patterns of the residential (single family and multifamily) regarding PV systems and EV chargers by examining spatial clustering and associations among variables through several data sources. The examined data entails the socioeconomic and housing characteristics based on the American Community Survey of the census.
+While a number of studies have investigated various aspects of the policies designed to support residential rooftop PV system (hereafter PV) and residential EV (hereafter EV) charger installations, there is still a dearth of studies aimed at investigating the impact of such policies on social equity. Two unanswered questions have emerged: 
 
-This study focuses on the City of Seattle open data portal which keeps the records of electrical permits issued between 2003 and 2018 in Seattle. Electrical permits are required when residential houses want to install PV and EV chargers on their properties. The present study employed advanced data mining techniques to identify residential PV and EV charger installation among the data sets. The data include geographical coordinates (latitudes and longitudes), dates of the PV and EV charger installations, and PV and EV charger contractors who installed the systems. Mapping the points of residential PV and EV charger in the region allows to verify a certain pattern in the installations. The densities of the data points, normalized by the density of the total households shows a clustered pattern, where the value means scaled density value. 
+(1) Are there certain communities inadvertently left out from incentive opportunities? 
+(2) What is the impacts of current policies on social equity in clean energy technologies? 
 
-> 
+To answer these questions, this study aims to perform a spatial analysis of the distribution of PV and EV charger installed buildings in terms of built environment and socioeconomic characteristics based on census tracts in Seattle, WA. In particular, this study aims to explore patterns of residential structures (single-family and multi-family housing) regarding PV and EV chargers by examining spatial clustering and relationships among variables. The examined data entails socioeconomic and built environment characteristics based on the 2015 American Community Survey (ACS). 
+
 * Task 1: Map clean energy technologies (PV and EV) to verify distribution patterns
-* Task 2: Find the latent variables using Factor analysis
-* Task 3: Verify the suitability of the latent variables using clustering analysis
-* Task 4: Find the relationship between the distribution patterns and the latent variables using spatial autocorrelation regression model
-* Task 5: Find the sensitive communities to each latent variable using Geographically Weighted Regression (GWR)
+* Task 2: Find the latent variables of built environment and socioeconomic characteristics using Factor Analysis
+* Task 3: Verify the suitability of the latent variables to the distribution of PV and EV using clustering analysis
+* Task 4: Find the significant factors of the distribution patterns using  a spatial regression model
+* Task 5: Find the vulnerable communities to each latent variable using geographically weighted regression (GWR)
+* Task 6: Assess the social equity in the distribution of clean energy technologies. 
 
 
-<!-- Point patterns could be identified by G estimation which could be compared with complete spatial randomness (CSR). The G estimation function (EDF) of the nearest neighbor distances is defined: di represents the distance from the i-th event to the nearest other event in A and n is the number of points. It simulated with 99 realizations under the null (resampling from n points) and formed the G estimate for each set, and produced Monte Carlo envelopes. The estimates being off the envelopes indicates the distribution of PV and EV chargers is far from randomness. After point data was aggregated to the related census tracks, the data was examined in terms of the socioeconomic and housing characteristics based on the American Community Survey (ACS) of the census (2011 - 2015 ACS 5-Year estimates). The rate of the PV and EV charger installations in each census track is the dependent variable in this study. Rest of variables are the proportions given census tracts. -->
+This study focuses on the City of Seattle open data portal which keeps the records of electrical permits issued between 2003 and 2019 in the city. Electrical permits are required when home owners install PV and EV chargers on their properties. The present study employed advanced data mining techniques to identify the installations of PV and EV chargers among the data sets. The data includes geographical coordinates (latitudes and longitudes), dates of the PV and EV charger installations, and PV and EV charger contractors who installed the systems. Mapping the points of PV and EV chargers allows the identification of their spatial patterns. 
 
-The expected rate of residential PV and EV charger per each census track is estimated based on the total number of housing units in Seattle and its residential PV and EV charger numbers. Standardized Installation Ratio (SIR) is defined by the number of residential PV and EV chargers over the expected number of residential PV and EV chargers given the estimated proportion. In this context, SIR refers to the total number of residential PV and EV charger over the total number of housing units in Seattle. The distribution of each census tract SIR shows a clustered pattern similar to that of the previous point data of residential PV and EV chargers.
+The expected rates of PV and EV chargers per each census tract are estimated based on the total number of housing units and their respective residential PV and EV charger numbers. Standardized Installation Ratio (SIR) is defined by $Y_i$, the number of PV and EV chargers over $E_i$, the expected number of residential PV and EV chargers given the estimated proportion. In this context, SIR refers to the total number of PV and EV chargers over the total number of housing units.
 
 $$ SIR_i = \frac{Y_i}{E_i} $$
 
-<!-- 
-The residential PV and EV charger rate is assumed to be associated with a Poisson count model considering its rare proportion with respect to the denominator (the total housing units) in a census track in addition to the fact that the number of residential PV and EV chargers itself, is count data. The residuals, after fitting the Poisson model, show clustering with the similar pattern of SIR distribution across census tracks. This indicates that there is strong evidence of spatial dependency among the regions in Seattle. -->
+A Moran’s I test identifies the global clustering in the distribution of the rates of residential PV and EV chargers. A very small p-value confirms that the PV and EV charger rates across census tracts are clustered. This clustering trend can be alleviated by fitting a model with appropriate covariates having similar spatially distributional characteristics. In this context, socioeconomic and built environment characteristics are examined to identify the most proper covariates. Having verified that there is a spatial pattern in the PV and EV charger installation rates, there might be related or shared latent variables in the socioeconomic and built environments in the region.
 
-A Moran’s I test identified global clustering in the distribution of the rates of residential PV and EV charger with a very small p-value with the test statistic. This confirms that the residential PV and EV charger rate across census tracks is clustered. This clustering trend can be alleviated by fitting a model with appropriate covariates with the similar characteristics. For that, socioeconomic and housing characteristics were examined to identify the most proper covariates. Having verified that there is a spatial pattern in the residential PV and EV charger rate, there might be related or shared factors in the socioeconomic and housing characteristics of the same region. It shows that housing, economy, and social inequality variables pairwise correlations.
+K-means clustering analysis are performed to identify communities similar in terms of socioeconomic and housing patterns in the region. It should be noted that K-means clustering does not take into account the PV and EV charger installation rates to define the Euclidean distance among data points, clustering of groups is determined only by the latent variables. This will help to characterize the difference among the clustered groups for PV and EV charger distributions.
 
-<!-- 
-Dimension reduction of covariates was performed by a factor analysis in consideration of avoiding multicollinearity. The newly generated factors were fitted to models to estimate the residential PV and EV charger rates. Residuals were checked afterwards to see if there is still a clustered pattern. If there is still a clustered pattern, it means that the model does not address the spatial dependency. The factor analysis identifies the similar variables in terms of housing unit structures (single/multi-family house unit), housing ownership types (rent/owned), economic status (income levels and housing values), and inequality index. Housing unit structures show the similar trend of housing tenure while housing median value, high income class proportion, and household median incomes follow the similar pattern representing economic status. Residential PV and EV charger rates and the factors from the dimension reduction show strong correlations. Generalized log-linear model (GLM) fits the data based on the factors, ML1, ML2 and ML3 without consideration of the spatial autocorrelation. Note that ML3, which was negatively correlated with the PV and EV charger rates, becomes positively correlated after the model fit because predictors, ML1 and ML2 affected ML3 in the model. -->
-
-K-means clustering analysis, afterward, identifies similar regions in terms of socio-economic and housing patterns in census tracks. It should be noted that K-means clustering does not take into account the PV and EV charger rates for defining the Euclidean distance among data points, thus the clustered groups are determined only by the three predictors, ML1, ML2 and ML3. This will help to see the difference between the clustered groups and PV and EV charger rates.  
-
-A Poisson lognormal spatial model, especially using BYM2 method, is tested to address any residual clustering issues using Bayesian method, Integrated Nested Laplace Approximations (INLA), which combines Laplace approximations and numerical integration in a very efficient manner. INLA enables Generalized Linear Mixed Models (GLMMs) addressing temporal and spatial error terms. An Intrinsic Conditional Auto-Regressive (ICAR) model addressed spatial autocorrelation. 
+A Poisson log-normal spatial model is run to address any residual clustering issues using a Bayesian method, Integrated Nested Laplace Approximations (INLA), which combines Laplace approximations and numerical integration in a very efficient manner. INLA enables Generalized Linear Mixed Models (GLMMs) to address temporal and spatial error terms. Furthermore, an Intrinsic Conditional Auto-Regressive (ICAR) model addresses spatial autocorrelation.
 
 $$
 \begin{aligned}
@@ -114,53 +131,58 @@ Y_i |\beta_{0},\beta_{1},\beta_{2},\beta_{3},S_i,\epsilon_i & \sim_{ind} \mbox{P
 S_1,...,S_n | \sigma_s^{2} & \sim ~~~ \mbox{ICAR}(\sigma_s^{2}). 
 \end{aligned} 
 $$
+where, $Y_i$ is the number of PV or EV chargers, $E_i$ is the expected number of PV or EV chargers, $X_{1i}, X_{2i}$ and $X_{3i}$ are the covariates, $S_i$ is the spatial random effect and $\epsilon_i$ is the non-spatial random effect in terms of a census tract i.
 
-Finally Geographically weighted regression (GWR) is used to address the local variation of coefficients of predictors by taking into account the local spatial dependency in order to locate regions more sensitive to each predictor.
+Geographically Weighted Regression (GWR) is used to address the local variation of coefficients of predictors by taking into account the local spatial dependency in order to locate regions more sensitive to each predictor.
 
 $$
 \begin{aligned}
 Y(s) = E(s)\mbox{e}^{(\beta_{0}+\beta_{1}(s)X_1(s)+\beta_{2}(s)X_2(s)+\beta_{3}(s)X_3+\epsilon(s))}
 \end{aligned} 
 $$
+where, $\beta_1$ and $\beta_2$ are coefficient estimators, and $X_{1}$  and $X_{2}$  are the covariates in terms of a census tract s.
 
 
 ## Result and Contribution (on going)
 
-Empirical analyses of residential PV and EV chargers in Seattle, WA, revealed that (1) there is a clustered pattern in the distribution of the clean energy technologies installations, (2) housing stability and economic status explain the uneven distribution, and (3) some neighbors are more sensitive to the economic status and housing stability in terms of installations. The study results revealed social equity issues based on the uneven distribution, i.e., certain communities are underserved for the clean energy technologies. The study results will help policy makers to better support any underserved communities under limited resources (e.g., those who rent houses and have less finance for PV and EV and charger) by devising equitable clean energy policies in response to clean energy technologies.
+Empirical analyses of PV and EV chargers in Seattle, WA, revealed that (1) there is a clustered pattern in the distribution of clean energy technologies, (2) housing stability and economic status explain the uneven distribution, and (3) some neighbors are more sensitive to the economic status and housing stability with respect to the installations. The current study results revealed social equity issues based on the uneven distribution, i.e., certain communities are underserved.
 
-Current uneven distribution of clean energy technologies are presenting social equity issue. The most significant factors to the uneven distribution were identified: economic status and housing stability. Spatial autocorrelation and clustering issue were addressed by the ICAR model. Furthermore this research found that socio-economic data from Census could be used as predictors to estimate the distribution of clean energy technologies for other regions. Finally, sensitive communities to the identified factors were identified for policy makers to address social equity for effective and even distribution of clean energy technologies. 
+Current uneven distribution of clean energy technologies are presenting social equity issue. The most significant factors to the uneven distribution were identified: economic status and housing stability. Spatial autocorrelation and clustering issue were addressed by the ICAR model. Furthermore, this study found that socio-economic data from ACS could be used as predictors to estimate the distribution of clean energy technologies for other regions. Finally, sensitive communities to the identified factors were identified for policy makers to address social equity in order for effective and even distribution of clean energy technologies. 
 
 
-# Policy Impact/Peer Effect on Diffusion (PV and EV)
+# Peer Effects on Diffusion (PV and EV)
 
 ## Introduction 
 
-**Key Words:**
-
-* Clean energy policies, and campaigns =======
-* Policy and campaign impact on diffusion trend by region
-* Peer effects on diffusion in spatio-temporal aspect
-* Diffusion models (new adopter model, e.g. Bass)
-
-### Washington clean energy policies 
-
-This research is based on a premise that the diffusion of clean energy technologies is largely impacted by two factors: policies and peer effect. First, Clean Energy Transformation Act (CETA) was signed into law by the Governor of Washington in 2019 to remove greenhouse gas emission from electricity supplies by 2045. It plans to eliminate coal power plants by 2025, at least 80% of electricity should be renewable or non-emitting while up to 20% could be alternative compliance option, and finally 100% of electricity should be renewable or non-emitting by 2045. For example, RCW 19.405 aims at equitable distribution of benefits:
-
-> “..ensure that all customers are benefiting from the transition to clean energy: Through the equitable distribution of energy and non-energy benefits and reduction of burdens to vulnerable populations and highly impacted communities; long-term and short-term public health and environmental benefits and reduction of costs and risks; and energy security and resiliency.” - RCW 19.405.030(8) states 
-
-Furthermore, RCW 19.405.120 focuses on low-income energy assistance by requiring utilities in Washington to provide energy assistance funding and programs to low-income households from July, 2021. Energy assistance is to reduce energy burden of the customers of utilities including, but not limited to weatherization and ownership in distributed energy resources (RCW 19.405.020(15)). In this regard, Washington State Department of Commerce (DoC) will estimate the demographic characteristics of households and housing characteristics served by energy assistance funding and programs (RCW 19.405.020(3)(a)). 
+```
+Non-financial factors such as knowledge mobilization and social influence affect diffusion of clean energy technologies: 
+* Spillovers (among neighborhoods)
+* Peer effects (among individuals)
+* Local advocacy (e.g., campaign, programs) 
+```
 
 
-### EV charging related policies 
+## Problem Statement 
 
-EV charging infrastructure has a significant effect on EV adoption as one of the EV adoption challenges is range anxiety related to refueling/ recharging time, and the availability of refueling infrastructure in addition to higher price, and lack of education and awareness about EVs (Stumpf 2019). It is understood that charging opportunities should be ubiquitous, fast, and inexpensive in order to increase EV adoption. In order to encourage EV charger installation, some states established a new code requiring new multi-family construction to accommodate EV charger installation. For example, Washington State has a code WAC 51-50-0427: where parking is provided, at least 5 percent of parking spaces must have EV charging infrastructure (WA Legislature 2016). Furthermore, there are incentives to encourage adopting EVs and chargers. For example, tax exemptions are available for the labor and services rendered in respect to electric vehicle infrastructure (Revenue Washington State 2019). Moreover, as a way to encourage EV purchasing, a tax credit, ranging from \$2,500 to \$7,500, is offered by the federal (DOE 2019) while Washington State offer purchase and leasing tax exemptions, ranging from \$2,600 to \$3,100, on EVs (Banse 2018).
+Washington State CETA features social justice and assistance to low-income households. It aims at not only equitable distribution of benefits, reduction of burdens to vulnerable communities, but also public health improvement, environmental benefits, and energy resilience. Furthermore, CETA requires that all utilities in the state implement energy assistance funding and programs to low-income households by means of bill reductions and weatherization, energy efficiency, and ownership in distributed energy resources such as PV. To that end, it is important to investigate how clean energy policies, programs, or campaigns affect diffusion of clean energy technologies in different communities. 
+
+Distribution patterns of clean energy technologies such as PV may not be explained by economic profitability alone such as solar insolation, electricity bills and financial incentives (Karteris and Papadopoulos 2012). There are other drivers affecting the  adoption of such technologies. For example, local regulations, home ownership and peer effects also explain the distribution patterns (Hofierka et al. 2014, Graziano and Gillingham 2015). Behavioral factors such as social contagion or peer effects were found to be drivers for the diffusion of PV in addition to financial drivers resulting from the advent of grid parity (Curtius et al. 2018). Significant spatial spillover effects were also found between neighboring counties while the differences of economic incentive mainly influenced the spatial and temporal patterns of PV adoption (Dharshing 2016). While previous studies largely employed surveys to investigate the significance of peer effects, there is still a dearth of studies aimed at investigating the impact of peer effects on diffusion using objective data. Since social influence on decision making for the adoption of a new technology is underestimated (Nolan et al. 2008), the current study is based on a premise that the diffusion of clean energy technologies is impacted by non-financial factors such as local advocacy, spatial peer effects (SPE) and spillovers. In this regard this study will investigate how peer effects and local knowledge mobilization affects diffusion. In particular, spillover effects (social contagion) and local advocacy on diffusion of technologies will be addressed. 
+
+## Literature Review
+
+Social influence affects the diffusion of clean energy technologies. Wolske et al. (2018) discussed strategies in behavioral economics and psychology that increase the financial appeal of PV. They found underlying consumer motivations and predispositions such as perceived social support and consumer innovation are more significant as the primary factors than behavioral economics and psychology. Once the market is matured, the factors that influence consumer's decision making shift (Heiskanen and Matschoss 2017). Therefore, they assumed that if the PV market is matured, the gain/loss frame, perceived temporal distance and clarity of marketing claims may have stronger influences on consumer decisions. Furthermore, importance of perceived social support and peer effects were addressed by highlighting pro-PV opinion leaders, hosting workshops and connecting consumers with PV adopters in the community (Noll et al. 2014). Curtius et al. (2018) stressed the social influences on the decision to adopt PV by suggesting snowball effects which facilitate the creation of regional hot spots rather than the shotgun approach of uniform nationwide incentives. 
+
+To investigate how and why peer effects work on the decision to adopt, descriptive norms explain what people typically do as people confirm these norms especially under the condition of high uncertainty (Nolan et al. 2008). In addition, injunctive norms suggest what people approve as socially expected. They found the number of PV installation as a descriptive norm affected PV adoption through social pressure (mediator or the injunctive norm). A higher number of PV installations in a neighborhood resulted in stronger social pressure as well as greater intentions to install PV.
+
+Peer effects can be discussed by the strength of interpersonal ties and geographical proximity (Curtius et al. 2018). Furthermore, it has temporal aspects as adoption increases with the existence of previous PV (Bollinger and Gillingham 2012). Peer effects and local organizations promoting PV were found to be the most important local factors to PV diffusion (Palm 2017). Ryan (2017) performed a survey PV adopters in higher diffusion municipalities compared with lower diffusion municipalities. Neighboring effects on diffusion of clean energy technologies refer to externalities in which the characteristics or actions of a reference group affect an individual’s behavior or outcomes (Ryan 2017). Peer effects on diffusion of clean energy technologies could be investigated by spillover effects between neighboring communities or in terms of individual’s surrounding local built environments. Muller and Rode (2013) discussed peer effects based on spatial and temporal distance between installations. Brudermann et al. (2013) found word of mouth and informative meetings were significant factors for diffusion. 
+
+As PV is normally installed on the rooftop, visibility of PV could affect a neighbor’s decision on PV adoption. In this regard, visibility of clean energy technologies could be considered to be passive peer effects while positive word of mouth is categorized as active peer effects. Scott et al. (2011) discussed peer effects in terms of imitation, herd behavior, and social interaction with the term "active" for solar advocacy and "passive" for visibility in a neighborhood. Regarding the local advocacy, Curtius et al. (2018) suggested co-investments with local authorities, public–private partnerships (PPP), or solarize campaigns. Both active and passive peer effects were also found to influence PV adoption in Texas (Rai and Robinson1 2013). 
+
+Spatial models offer insights into spatial dynamics of the diffusion of innovations (i.e., clean energy technologies) that promote policies aimed at enabling transition to a low carbon economy that is just, efficient, and effective (Balta-Ozkan et al. 2015). The authors added that ignoring spatial dependence leads to biased and inconsistent estimate and loss of efficiency. Graziano et al. (2019) addressed spatial peer-effects (SPEs) and spatial spillovers regarding the built environment and jurisdictional boundaries with cross-sectional (OLS), panel (temporal), and spatial models. Spatiotemporal, built environment, socioeconomic variables including SPE with spatial factors within 0.5 to 4 miles were analyzed in addition to addressing spatial spillovers using a spatial autoregressive (SAR) model, a special case of the general spatial Durbin model (SDM). They found SPE decays as time passes and distance increases depending on the built environment. 
+ 
+Local agencies have been playing an important role in regard to local advocacy or active peer effects. For example, Solarize Northwest is a community-driven, neighborhood group purchase campaign from Spark Northwest (Northwest Sustainable Energy for Economic Development), a 501(c)(3) non-profit organization aimed at creating communities of locally-controlled clean energy by solarize campaigns in cooperation with community organizations, solar contractors, utilities, city governments, and solar lenders. Communities take part in the program by attending workshops, getting site assessments, and contracting for installation. The local communities with the installed PV by the local advocative campaign in Seattle are as below. 
 
 
-### Solarize Northwest 
-
-Solarize Northwest is a community-driven, neighborhood group purchase campaign from Spark Northwest (Northwest Sustainable Energy for Economic Development), a 501(c)3 non-profit organization aimed at creating communities of locally-controlled clean energy by Solarize campaigns in cooperation with community organizations, solar contractors, utilities, city governments, and solar lenders. Communities take part in the program by attending workshops, getting site assessments, and contracting for installation. In particular, the campaign was implemented at Queen Ann in 2011 followed by other communities as below: 
-
-> 
 * January-April 2011 Queen Anne 30 Queen Anne homes for 130 kilowatts 
 * July-October 2011 Magnolia 29 Magnolia homes for 114 kilowatts 
 * January-April 2012 NE 52 Northeast Seattle homes for 246 kilowatts 
@@ -168,23 +190,34 @@ Solarize Northwest is a community-driven, neighborhood group purchase campaign f
 * July-October 2013 Central/ SE 185 homes for 885 kilowatts 
 * July – October 2014 SW 111 homes for 684 kW
 
-### Peer effects 
-
-Economic incentive differences influence the spatial and temporal patterns of PV adoption while significant spatial spillover effects were found between neighboring counties (Dharshing 2016). Neighboring effect on diffusion of clean energy technologies could be discussed in terms of peer effects which refer to externalities in which the characteristics or actions of a reference group affect an individual’s behavior or outcomes (Ryan 2017). Peer effects on diffusion of clean energy technologies could be investigated by the spillover effects between neighboring communities or in terms of individual’s surrounding local built environments. In particular, PV is normally installed on the rooftop, visibility of PV could affect neighbor’s decision on PV adoption. In this regard, visibility of clean energy technologies could be considered to be passive peer effects while positive word of mouth is categorized to active peer effects. Both of active and passive peer effects were found to influence PV adoption in Texas (Rai et al. 2013).
-
+With financial incentives, peer effects will achieve diffusion in the targeted communities as peer effects play an important role in the early adoption stage of S-shaped diffusion curve (Rogers 1962) while it is uncertain for the matured market.
 
 ## Methodology 
 
-Washington State CETA features social justice and assistance to low-income households. It aims at not only equitable distribution of benefits, reduction of burdens to vulnerable communities, but also public health, environmental benefits, and energy resilience. Furthermore, CETA requires that all utilities in the state implement energy assistance funding and programs to low-income households by means of bill reductions and weatherization, energy efficiency, and ownership in distributed energy resources. In this regard, it is necessary to investigate how clean energy policies, programs, or campaigns can affect diffusion of clean energy technologies in different communities. In particular, Solarize Northwest campaign impact on diffusion in Seattle will be investigated using time series analysis including interrupted time series (ITS). This analysis will verify the impact of the campaign on communities with respect to diffusion of PV compared to EV in Seattle. In addition, peer effects on diffusion of clean energy technologies will be investigated to understand how the visibility of PV and EV can influence diffusion of the technologies. The questions are: (1) does the community-driven campaign affect diffusion of PV and EV? and (2) does the passive peer effects of PV visibility affect diffusion in the community?
+```
+Interrupted time series (ITS) identifies active peer effects:
+* Impact of interventions (solarize campaign) at a time to adoption changes
+* Comparing different groups (treatment: PV; control: EV chargers)
 
-> 
-* Task 1: Find diffusion trends of clean energy technologies (PV and EV) for each neighborhood over the years
-* Task 2: Indicate the policy interruption (such as incentive program) on the diffusion trends of clean energy technologies
-* Task 3: Analyze the interruption impact of the policy to diffusion using time series models
-* Task 4: Analyze the peer effects of neighboring built environments on diffusion using hierarchical regression models
+Multilevel models identify passive peer effects: 
+* Level 1 concerns PV visibility around neighbors at a time
+* Level 2 concerns socio-economic and  built environment characteristics (e.g., income and housing structure)
+```
 
+This study aims to investigate the impact of Solarize Northwest campaign on diffusion in Seattle by using time series analysis including interrupted time series (ITS). The study results are expected to verify the impact of the campaign (local advocacy or active peer effects) on communities with respect to diffusion of PV and EV in Seattle. In addition, passive peer effects on diffusion of clean energy technologies will be also investigated to understand how the visibility of PV and EV can influence diffusion of the technologies by using multilevel models. The questions this study tries to answer are: 
 
-ITS evaluates the interventions which is appropriate for interventions introduced at a population level over a clearly defined time period and that target the reference population outcomes. This analysis is suitable for a continuous sequence of observations over time with respect to the intervention which differentiates pre-intervention and post-intervention period. The outcome should be available after the intervention and the time intervals should be equally spaced over time. Two models are used for single group and multiple groups. Single group analysis aims at impact of the intervention on diffusion of PV in Seattle while multiple group analysis targets the same goal while employing EV or diffusion trend of PV on other community as a control group to verify the impact of the intervention. 
+(1) Does a local advocacy campaign or active peer effects affect diffusion of PV and EV? and 
+(2) Do passive peer effects (visibility of neighborhood PV) affect diffusion in the community?
+
+This study employs an interdisciplinary approach using time series models and multilevel models in a spatio-temporal data analyses. The following five tasks describe the workflow. 
+
+* Task 1: Aggregate the census tract data to neighborhood to identify trends of diffusion
+* Task 2: Find diffusion trends of clean energy technologies (PV and EV) for each neighborhood over 2009 - 2019 (spatio-temporal data analysis)
+* Task 3: Analyze local advocacy campaign or active peer effects on diffusion using time series models
+* Task 4: Analyze passive peer effects through visibility of neighborhood PV on diffusion using multilevel models
+* Task: 5: Construct a spatio-temporal diffusion model to explain the peer effects on diffusion 
+
+ITS evaluates the interventions which is introduced at a population level over a clearly defined time period and that target the reference population outcomes. This analysis is suitable for a continuous sequence of observations over time with respect to the intervention which differentiates pre-intervention and post-intervention period. The outcome should be available after the intervention and the time intervals should be equally spaced over the study duration. Different models will be used for single and multiple groups. Single group analysis will investigate the impact of the intervention on diffusion of PV in Seattle, while multiple group analysis will have the same goal while employing EV or diffusion trend of PV on another community as a control group to verify the impact of the intervention. The equation is as follows. 
 
 $$
 \begin{aligned}
@@ -196,6 +229,8 @@ where, T = the time elapsed since the start of the study; X = a dummy variable i
 of the series; $\beta_1$ = estimates the base trend; $\beta_2$ = estimates the change in level in the post‐intervention segment; $\beta_3$ = estimates the change in trend in the post‐intervention 
 segment.
 
+The equation for multiple group analysis is as follows. 
+
 $$
 \begin{aligned}
 Y_t = \beta_{0}+\beta_{1}T_t+\beta_{2}X_t+\beta_{3}T_tX_t+\beta_{4}Z+\beta_{5}ZT_t+\beta_{6}ZX_t+\beta_{7}ZT_tX_t+\epsilon_t
@@ -204,55 +239,102 @@ $$
 
 where, Z = dummy variable for group; $\beta_4$ = difference between the groups at the beginning time point; $\beta_5$ = difference between the groups in prior trend; $\beta_6$ = difference between the groups in change in level; $\beta_7$ = difference between the groups in change in trend. 
 
+Multilevel models or hierarchical linear models are statistical models with measures at more than one level. In this study, individual households who installed PV were aggregated into a neighborhood level that leads to two hierarchical levels. The level 1 model is:
+
+$$
+\begin{aligned}
+Y_{ij} = \beta_{0j}+\beta_{1j}X_{ij}+e_{ij},
+\end{aligned} 
+$$
+
+where, $Y_{ij}$ = the outcome or the dependent variable for an individual observation at Level 1 (subscript i is for individual case and subscript j is for the neighborhood); $X_{ij}$ = the level 1 predictor; $\beta_{0j}$ = the intercept of the dependent variable in neighborhood j; $\beta_{1j}$ the slope for the relationship in neighborhood j; and $e_{ij}$ = the random errors of prediction for the level 1 equation. The variable of the number of PV around the individual household within a certain distance could be a predictor in the level 1 equation. 
+
+In the level 2 regression equation, the dependent variables are the intercepts and the slopes in the lever 1 model: 
+
+$$
+\begin{aligned}
+&\beta_{0j} = \alpha_{00}+\alpha_{01}W_{j}+u_{0j},\\
+&\beta_{1j} = \alpha_{10}+u_{ij},
+\end{aligned} 
+$$
+
+where, $\alpha_{00}$ = the intercept. This is the grand mean of the dependent variable across all the neighborhood when all the predictors are equal to 0; $W_j$ = the level 2 predictor; $\alpha_{01}$ =  the overall regression coefficient, or the slope, between the dependent variable and the Level 2 predictor; $u_{0j}$ = the random error component; $\alpha_{10}$ = the overall regression coefficient, or the slope, between the dependent variable and the level 1 predictor; and $u_{ij}$ = the error component for the slope. Neighborhood characteristics such as built environment could be predictors in the level 2 equation. 
+
 
 ## Result and Contribution (expected)
 
-The identified local community based program is found to significantly influence the diffusion trend. Spatio-temporal peer effects are significant for diffusion as well. The most significant factors to the diffusion are identified and compared (local community-driven campaign and peer effects). Diffusion models are suggested on PV and EV adoption in Seattle. This will confirm the importance of community involvement and peer effects on diffusion of clean energy technologies. Policy makers can increase diffusion of desired clean energy technologies while saving the acquisition cost. 
+The identified local advocacy is found to significantly influence the diffusion trend. The most significant factors to the diffusion are identified and compared (i.e., peer effects). This will confirm the importance of community involvement and peer effects on diffusion of clean energy technologies. Policy makers can increase diffusion of the desired clean energy technologies while saving the acquisition cost. 
 
 
 # Identifying Vulnerable Communities with Uneven Distribution in Spatiotemporal Aspects
 
 ## Introduction 
 
-**Key Words** 
+```
+Distributed energy systems improve resilience while technically challenging the grid: 
+* Characteristics of Intermittent generation of renewables 
+* Burden of electric bill on populations due to grid reliability, modernization and maintenance
+* Customers' need of diverse sources, storage, and demand participation 
+* ISO's need of improved forecasting and new operating tools
+```
 
-* Resilient energy system in regard to decentralization and diversification 
-* Different diffusion patterns between PV and EV and by communities 
-* Having large amount of variable renewable sources leading to reliability issue on Grid requiring development of storage and demand-side solutions
-* Attention to communities with higher decentralization trend due to load balancing
+## Problem Statement 
 
-### Reliability of energy supply 
+A resilient energy supply is important especially during emergency situations when, for example, medical services are in high demand. Furthermore, about 1.1 billion people lack access to electricity and an estimated investment of 52 billion USD per year is needed for the Sustainable Development Goals (SDGs) (IEA 2017). Lack of electricity differentially affects vulnerable people (e.g., patients). Hurricane Maria caused additional deaths in Puerto Rico in 2017, especially to those who relied on respirators powered by electricity (Robles et al. 2017). Maria perpetrated the longest blackout in US history, more than 100 days (Irfan 2018). Respiratory patients are more vulnerable to power outages and mortality and respiratory hospital admissions increased significantly during the blackout (Lin et al. 2011). These studies and reports suggest that  a resilient power supply is essential to protect those vulnerable communities. To that end, a decentralized energy network has the potential to improve energy accessibility and resilience, and has been increasing in size and use due to efficient end-use appliances and low-cost PV supported by information and communication technologies (ICT) and virtual financial services (Alstone et al. 2015). However, 1.3 billion people still lack access to electricity, and experience barriers to mobilize the decentralized energy networks to local level. 
 
-Reliability of energy supply has proven to be important especially during emergency situations when, for example, medical services are in high demand. Furthermore, about 1.1 billion people lack access to electricity and 52 billion USD annual investment is needed for the Sustainable Development Goals (SDGs) (IEA 2017). Lack of electricity affects more vulnerable people such as patients. Hurricane Maria caused additional deaths in Puerto Rico in 2017, especially to those who relied on respirators powered by electricity (Robles et al. 2017). It is known that Maria incurred the longest blackout with more than 100 days in the US history (Irfan 2018). Respiratory patients are more vulnerable to power outages that mortality and respiratory hospital admissions increased significantly during the blackout (Lin et al. 2011). These studies and reports suggest that reliable power supply is essential to those vulnerable communities. 
+While decentralized energy systems are improving resilience, the intermittent power generation of PV affects reliability of the power supply at the community level. This increases challenges to grid system operators because higher penetration and uneven distribution of PV and EV lead to challenges to the local electrical grid. Thus, access to clean energy technologies not only provide benefits of economy and resilience to communities, but also pose technical challenges to the local grid. First, the incurred costs of grid modernization increases burdens to underserved communities in the form of taxes and electric bills. Second, communities with higher decentralization trends need to address uncertain power generation schedule due to the lack of active generation and demand connectivity. As a result, communities need more diverse and less correlated power sources, energy storage and demand participation. Lastly, an electric network with higher decentralization trends requires improved forecasting technologies and new operating tools to ensure stability and coordination among transmission systems. This study aims to identify which communities are more vulnerable in terms of energy resilience in coming years due to lower access to clean energy technologies. In addition, as installations of PV and EV chargers are expected to increase, this study will also identify technically vulnerable communities which will require system investments.  
 
-To address climate change which is affecting people, it is necessary to have reliable energy services evenly distributed to all over the communities, particularly to those more vulnerable. Decentralized energy system is more reliable in terms of energy access and the low carbon challenges (Goldthau 2014). For example, micro-grids (decentralized energy system) at community level lead to more robust power systems (Wang and Reed 2017). Integration of interdependent infrastructures including, but not limited to energy, water, and telecommunication, also bring out the better mitigation in response to extreme weather (Zimmerman et al. 2017).
+## Literature Review
 
-### Definition of resilience
+Climate change and its impact on urban systems has raised questions of how to improve systems resilience especially related to energy. Energy resilience studies are still at an emerging stage and only a few studies have tried to actually define energy resilience. First, the common definition of resilience is discussed in terms of abilities in preparation, absorption, recovery, and adaptation to stressors. Sharifi and Yamagata (2016) addressed resilience in sustainability related dimensions: availability, accessibility, affordability, and acceptability. They found “preparation” in resilience ability and “availability” in sustainable dimensions to be the most critical considerations to addressing energy resilience. They added that “preparation” involves early adoption of planning and design measures to avoid potential disruptions in that preparation is most effective to improve resilience. Furthermore, they argue that reserve margins, diverse energy sources, and monitoring systems could improve “availability” of energy services (Sharifi and Yamagata 2016).
 
-Climate change and its impact on urban systems have raised questions of how to improve resilient systems especially the ones related to energy. Some of researchers introduced indexes related to resilience for analyses, and the others created mathematical functions to interpret the current phenomenon and simulated to prove their hypotheses. Energy resilience research is still at its emerging stage that a few literature has tried to define energy resilience. First, the common definition of resilience could be discussed in terms of resilience abilities (preparation, absorption, recovery, and adaptation). It is also addressed in terms of sustainability related dimensions (availability, accessibility, affordability, and acceptability). “Preparation” in resilience ability and “availability” in sustainable dimension are considered to be the most critical to address energy resilience (Sharifi and Yamagata 2016). “Preparation” involves early adoption of planning and design measures to avoid potential disruptions. Preparation measure is known to be the most effective to improve the resilience. Furthermore, reserve margins, diverse energy sources, and monitoring systems could improve “availability” of energy services.
+Vulnerability is defined as being at risk of having limited capacity to protect one’s interests. It is mainly interpreted in connection with weakness, dependency, powerlessness, deficiency, and passivity (Gilson 2013). This implicit bias leads to a problem in ethical response as it entails negative connotation (Gilson 2013). Furthermore, vulnerability could be discussed in two sources - “inherent” and “situational” (Mackenzie 2013). Inherent vulnerability is defined as peoples' neediness and dependence on others. This applies to energy dependency in modern society because energy is essential to the basic human needs to sustain life. Situational vulnerability is context-dependent such that the negative impact of energy poverty on a certain community, would be different from the impact on other communities, depending upon social, political, economic, and environmental situations. For example, effects of hurricane would be lower in a community with more resilient energy systems. Thus, it is important to discuss characteristics of resilient energy systems in terms of energy dependency and social, political, economic, and environmental situational conditions.
 
-### Definition of vulnerability
+Community resilience may increase due to integrated energy diversity and decentralization of energy supply. Two emerging characteristics for energy resilience were presented by Lin and Bie (2016): integrated energy system (IES) and distributed energy resources (DERs). IES features inter-dependency and diversity while DERs represent energy sources spread across regions by being decentralized using technologies such as micro-grids. Integration of interdependent infrastructures such as energy, water, and telecommunication, can also lead to better mitigation in response to extreme weather (Zimmerman et al. 2017). This study suggested that when systems are combined, the complexity can become characterized and the emergent behavior of the system becomes hard to be expected. In the study, two measures for energy resilience were introduced: hardware hardening and operational resilience strategies. Hardware hardening is costly and influences a limited part of the whole system leading to less effectiveness. On the other hand, increasing diversity of energy supply, would increase system resilience (Zimmerman et al. 2017).
 
-Vulnerability could be defined as being at risk of having limited capacity of power to protect one’s interest. Vulnerability is, however, mainly interpreted in connection with weakness, dependency, powerlessness, deficiency, and passivity. This implicit bias leads to a problem in ethical response as it entails negative connotation (Gilson 2013). Vulnerability could be interpreted in two sources - “inherent” and “situational” (Mackenzie 2013). Our neediness and dependence on others incur inherent vulnerability. This applies to energy dependency in the modern society because energy is essential to the basic human needs to sustain life. Situational vulnerability is context dependent such that negative impact of energy poverty on a certain community, would be different from the impact on other communities, depending upon social, political, economic, and environmental situations. For example, effects of a same hurricane would be less in a community, which has more resilient energy systems. Thus, it is necessary to discuss characteristics of resilient energy systems in terms of energy dependency and situational conditions (social, political, economic, and environmental).
+Understanding inter-dependencies of infrastructures are essential to address vulnerability. For instance, Wang and Reed (2017) showed that inter-dependencies in infrastructures are important to a system resilience. Furthermore, their study suggested that using community-level micro-grids would increase robustness of the energy system in addition to hardening the structure of power delivery components and increasing power generation redundancy. Furthermore, homogeneous and sole energy production systems can not only adversely affect communities with the lack of diverse energy supply, but also harm the social and environmental value of the built environment. For example, Shahidehpour et al. (2017) suggested centralized energy production may have contributed to vulnerability of the current urban form because most subsystems of human activities were relying on the sole energy production. Thus, controllable and islandable micro-grid systems (decentralized systems) would improve the resilience of power grids in extreme conditions.
 
-### Characteristics for resilient energy systems
+Energy transition to decarbonization resulting from climate change requires demand side participation, battery storage, and decentralization in response to variable renewables. Without consideration of the cost-reliability tradeoff, going 100% renewable would produce higher energy cost and lower reliability due to the characteristics of variability of renewable energy sources. For example, higher uptake of PV is a challenge to network operators to keep enough capacity and voltage for stable energy supply (Balta-Ozkan et al. 2015). These reliability issues in supply-demand balance result from the fact that renewables do not have active generation and demand connected (ESIG 2019). This affects energy planning and operation. Energy planning takes into account resource adequacy to ensure the demands of capacities (system, local and flexible) are met. Power plants get paid by providing those capacities. As more distributed power sources are deployed, more diverse and less correlated power sources, storage and demand participation are needed. While adequacy is a planning challenge, flexibility and the provision of energy services are an operational challenge that requires probabilistic mindset, distributed energy storage, data analytics and coordination between systems. Furthermore, with respect to the market, price volatility due to variable renewables requires investment for flexibility. In addition, voltage and frequency control should be managed carefully as renewables are non-synchronous with no inherent inertial response. Change in the synchronous nature of an electricity system will affect the core technology of the current power infrastructure with its control and protection (ESIG 2019). 
 
-Community resilience could benefit from integrated energy diversity and decentralization in terms of reliable energy supply. Two emerging characteristics for energy resilience were presented: integrated energy system (IES) and distributed energy resources (DERs) (Lin and Bie 2016). IES is related to interdependence and diversity of systems while DERs represent several renewable energy sources spread across regions. DERs could be interpreted as decentralized energy systems such as micro-grids. When systems are combined, the complexity becomes characterized and the emergent behavior of the system is hard to be expected. In the study, two measures for energy resilience were introduced: hardware hardening and operational resilience strategies. Hardware hardening happens to be costly and influences only a limited part of the whole system that is less effective. On the other hand, increasing diversity of energy supply, would increase the system resilience.
+Deregulation may lead to less grid reliability with increased competition, which prevented some states from market restructuring or deregulation (Michaud 2018). Likewise, increasing renewables in the grid affects grid reliability as well raising the issue of hosting capacity. Hosting capacity is the amount of distributed PV (DPV) that can be added to distribution system before control changes or system upgrades are required to safely and reliably integrate additional DPV. A number of factors influencing hosting capacity of a DPV system require consideration, such as whether advanced inverter settings are utilized, the system size, and where it is located on the circuit. The characteristics of DPV system includes the location and time-varying behavior of all distributed energy resources and the existing equipment on a circuit. As the system configuration evolves over time depending on investments made by utility companies, DPV owners or developers, distribution planning practices are important especially when upgrades or other mitigation against the impacts of having more renewables are required (Dubey et al. 2015). 
 
-**Integrated energy system (IES)**
 
-Understanding inter dependencies of infrastructures are essential to address vulnerability. For instance, a study shows that inter dependencies in infrastructures including energy, are important to a system resilience, and space and time are critical to assess hazard impact of interdependent lifeline infrastructures (Wang and Reed 2017). Furthermore, the study suggested that micro-grid at the community level, would increase robustness of the energy system in addition to hardening structure of power delivery components and increasing power generation redundancy. Robustness for power and telecommunication infrastructure was modeled in this study, in terms of resilience (Purple infra – human; Green infra – social, biological, hydrological, circulatory, and metabolic; Gray infra – lifelines; and modeling of interdependencies). Using state wide data, the study models the inoperability in terms of time (model parameters chosen by the goodness of fit). Time to recovery model estimates resource allocation pre-event. It found that peak wind speed and the corresponding parameters are not significant. Fragility models were developed by logistic regression. The same model for power was applied to telecommunication. Combined model (power and telecommunication) with the fragility model and single degree of freedom system, may predict the restoration after hurricanes. Those models could be used to predict performance of the combined infrastructure systems in response to future storms. This study argues that social science involvement may be necessary to investigate from the community perspectives in addition to the infrastructure operators’ perspectives.
+EV features battery storage and demand side participation with the grid because it could be employed for load balancing via smart charging with Vehicle to Grid (V2G) technology. Yamagata et al. (2016) tried to analyze several algorithms to find the optimal clustering of communities in terms of self-sufficiency, sharing cost, and stability. The concept of V2C (vehicle to community) was introduced in the study with respect to tradeoff between implementation and maintenance cost, and electricity self-sufficient for community based energy networks. In this context, DER adopter analysis of different technologies (PV, EV, and HVAC) was discussed by comparison of distribution patterns and aggregating scales (Heymann et al. 2019). The authors suggested to consider uneven distribution for electricity network planning with respect to the investment plan for EV and PV with different distribution patterns. They argued that the difference of EV and PV adoption for energy policy design in consideration of synergies and distributional justice should be considered as it will help design DER support schemes for maximizing penetration and reducing network expansion costs (Heymann et al. 2019). 
 
-**Distributed energy resources (DERs)**
+Furthermore, PV self-consumption will lower medium voltage distribution grid losses and investments in cables and transformers (Litjens et al. 2018). In addition, overloading may occur on medium voltage grids due to the increase of PV, EV, and electric heating (Sijm 2014). In this regard, higher levels of PV self-consumption may decrease stress on the grid thus ease integration of PV in the existing infrastructure (van der Kam and van Sark 2015). This study suggested self-consumption by energy storage and demand side management (DSM) by establishment of the geographical misfit between EV and PV diffusion and the impact on energy systems. They found EV diffusion lags behind PV diffusion led to different supply and demand patterns for different regions which require different grid architectures (van der Kam and van Sark 2015).
 
-Homogeneous and a sole energy production system not only adversely affects communities due to the lack of reliable energy supply, but also harms the social and environmental value of the built environment. Decentralization of energy production and supply has played an important role to resilient community as it is more robust in response to disruptions. For example, a study shows controllable and islandable micro-grid systems (decentralized systems) would improve the resiliency of power grids in extreme conditions (Shahidehpour et al. 2017). On the other hand, centralized energy production may have contributed to vulnerability of the current urban form as most of subsystems of human activities are relying on the sole energy production. The more dependent to a sole energy production, the more vulnerable a system would face interruptions.
 
-To that end, decentralized energy network has potential to improve the energy accessibility, and has been increasing due to efficient end-use appliance and low-cost photovoltaic supported by information and communication technologies (ICT) and virtual financial services (Alstone et al. 2015). However, 1.3 billion people currently lack access to electricity, and experience barriers to mobilize the decentralized energy networks to local level. Governance of energy infrastructures in connection with polycentric governance will promote resilient energy systems (Goldthau 2014). It is because polycentric governance promotes decentralized energy systems. Social science would be helpful to provide the reliable energy services as polycentric governance is critically related to socio-economic actors.
+## Methodology 
+
+Installations of PV and EV chargers are expected to increase and lead to challenges to the local electrical grid with respect to the reliability of power supply. To that end, it is important to identify vulnerable communities in terms of rates of technology penetrations in different communities. The emerging questions are: 
+
+(1) What are predicted future trends of diffusion of PV and EV in each community?
+(2) Where are technically vulnerable communities with respect to rapid increases of PV and EV? 
+
+For these questions, this study aims to apply machine learning techniques to predict diffusion of clean energy technologies in consideration of socioeconomic, built environment characteristics and peer effects. The predicted diffusion will identify socially and technically vulnerable communities in terms of diffusion of clean energy technologies.
+
+* Task 1: Verify the importance of identifying communities with higher decentralization trends
+* Task 2: Identify methods to best predict the diffusion of clean energy technologies in consideration of the identified factors: socioeconomic, built environment characteristics and peer effects
+* Task 3: Develop a robust prediction model to identify vulnerable communities with regards to clean energy technology distribution
+* Task 4: Validate the prediction model in case studies and evaluate the impact of the different diffusion rates of clean energy technologies
+
+
+Based on features such as socioeconomic and built environment characteristics and peer effects, the development of a prediction model will involve linear regression models with Ridge, Lasso, and Elastic net regressions. Regularization is necessary to avoid overfitting which leads to a higher variation when applying the model to other data sets. It is bias-variance tradeoff that a localized model is hard to be generalizable. Regularization helps to avoid overfitting by adding a penalty term to the loss function. A penalty term prevents model parameters (feature weights) from becoming larger. The best model can be identified in terms of accuracy and root square mean error (RSME).
+
+There are several machine learning algorithms available for this study. For example, a support vector machine (SVM) separates data using a hyper-plane which is defined by support vectors or the nearest observations. Depending on the tolerance of margin violations, there are soft and hard margin classifications. An SVM regressor with Gaussian radial basis function (RBF) kernel is a special form of SVM that has higher dimensional feature vectors. There are several kernels such as polynomial and sigmoid. The benefit of kernel is that the classifier can be flexible enough to separate data without involving additional features. A random forest model features entailing randomness when training a model, which promotes diversity, leading to a better model performance. This algorithm is an ensemble of decision trees that try to separate data into homogeneous groups by setting thresholds. Extra-trees even randomize the thresholds to have a more diverse environment for the model to be trained. A gradient boosting model fits data and then keeps fitting the residuals in sequence by adding predictors. These algorithms have several hyper-parameters that could be searched for the best model performances by using modules such as randomizedSearchCV and gridsearchcv. All the models could be fitted with the optimal hyper-parameters found. 
+
+Gradient descent is a generic optimization algorithm in machine learning. For example, to minimize a cost function $f(\theta)$, we start with an arbitrary point $\theta^{0}$ and repeat the algorithm until it is near the optimal point. The cost function could be different depending upon the context. The goal is the find the weights ($\theta$) which minimize the cost function. 
+
+$$
+\begin{aligned}
+\theta^{k + 1} = \theta^{k} - \eta_k\nabla f(\theta^{k}) 
+\end{aligned} 
+$$
+
+where, $\nabla f(\theta^{k})$ = the direction of steepest descent of f at a point $\theta$; $\eta_k$ = "step size" or "learning rate." $\theta^{k+1}$ has a better value than $\theta^{k}$. With each step of Gradient descent, the value function gets better. Eventually, the algorithm converges to a local minimum. 
 
 
 <!-- 
-The investment of off-grid, one of the decentralized energy systems, however, features Unfavorable risk-return profiles and small investment volumes. Spatial diversity in a portfolio can reduce investment risks of private investments on resilient energy systems. Potential aggregation of small-scale renewable energy to investment is promising in that spatial diversification is helpful for derisking. Classification of risks, quantitative estimation of cost and derisking effects for aggregation of small-scale investments will help attracting private investment on off-grid. Barriers to private investment are financial, institutional and policy, and technical. Market risk could be decreased by portfolio with different geographies or industries. Systematic assessment is necessary for derisking related to regional disasters, policy change and regional industry (Malhotra et al. 2017). --> 
-
 ### Hosting capacity 
 
 Hosting capacity is the amount of DPV that can be added to distribution system before control changes or system upgrades are required to safely and reliably integrate additional DPV. 
@@ -263,77 +345,524 @@ Factors to consider:
 * The location and time-varying behavior of all distributed energy resources on the circuit, such as distributed storage,
 * The existing equipment on a circuit at any given time, which will evolve over time depending on investments made by utilities and DPV owners or developers, and
 * The distribution planning practices used by the utility—especially how they determine when upgrades or other mitigations are required.
+--> 
 
 
-## Methodology 
+# Significance of Research and Contribution to Knowledge
 
+```
+* Address social equity for distribution of benefits and costs of clean energy technologies:  
+* Identify vulnerable communities considering resilience and reliability of clean energy technologies
+* Apply the study to energy policy, electricity network planning, and urban planning
+    * Devising equitable policies 
+    * Informed investment decision on energy infrastructure
+```
 
-Installations of PV systems and EV chargers are expected to increase, which leads to interruptions to the local electrical grid. To that end, it is important to indentify vulnerable communities in terms of rates of the technology penetrations in different communities. The questions are: (1) what would be the trends of diffusion of PV and EV in each community? and (2) where are the communities that the stakeholders such as policy makers and local utilities should pay attention with respect to the rapid increases of PV and EV? For these questions, this research aims to conduct machine learning techniques to predict diffusion of clean energy technoglogies on socioeconomic features, policy interventions, and peer effects. The predicted diffusion will be matched with target communities as a way to identify relatively vulnerable communities in terms of diffusion of clean energy technologies.
+This study has potential for significant implications to both energy policy analysis and electricity network planning as it involves social justice, public policy and urban planning. The present study will reveal social equity issues (i.e., certain communities are underserved) based on the uneven distribution of benefits and costs of clean energy technologies. Clean energy technologies play a role in community resilience because decentralized energy systems such as PV can improve resilience in response to climate change. Furthermore, energy diversity, in the context of diverse energy sources, would reduce risk to society, thus enhancing the stability of the built environment as biodiversity keeps ecosystem healthy and stable. This is because the diversification effect lessens the volatility or risk by having less correlated characteristics. Decentralized and diversified energy systems would enhance community resilience in response to climate change. Therefore, higher diffusion of clean energy technologies helps communities to be equipped with better resilience in addition to economic, health and environmental benefits. 
 
-<!-- It is because intermittent power generation from renewable energy sources and uncertainty of the local EV charging schedules will burden the independent system operator (ISO) for load balancing. --> 
+However, while there are benefits, adding more clean energy technologies to the grid has a reliability issue that result in costs. This is because the variable power generation entails a burden to the grid in terms of a reliable power supply. Handling variable power generation will incur costs for grid modernization necessary to deploy more clean energy technologies. Furthermore, system operators are technically required to have improved forecasting and new operating tools ensuring stability and coordination between systems (ESIG 2019). In addition, incentives such as tax credits and Feed-in Tariffs (FiTs) are forms of regressive taxation inequitably passing on the costs to underserved communities through taxes and increasing electric bills. Economic incentives have resulted in the uneven distribution of PV, lead to a redistribution of income by benefiting counties with favorable factors such as solar radiation (Dharshing 2017). Those incentives preferentially benefit wealthier households resulting in inadvertent relative increases in taxation on low-income households, further contributing to energy inequalities (Poruschi et al. 2019). Furthermore, multi-family and renter-occupied units — which are common in urban regions — have low participation or access to these incentives (Gillingham et al. 2012).
 
-> 
-* Task 1: Verify importance of identifying communities with higher decentralization trend
-* Task 2: Identify methods to best predict the diffusion of clean energy technologies in consideration of the identified significant factors: socio-economic characteristics, policy interventions, and peer effects
-* Task 3: Develop a robust prediction model to identify vulnerable communities with regards to clean energy technology distribution
+In short, the benefits and costs of diffusion of the clean energy technologies are unevenly distributed and introduce issues related to the reliability of the power supply, causing concerns in energy justice. Previous studies have suggested some measures to address social equity in the distribution of clean energy technologies. Dharshing (2017) suggested policies to take specific local measures to address imbalances in PV adoption. Leasing business was recommended to increase the adoption for less affluent households such as renters to join in the PV market  (Drury et al. 2012) and community solar (Funkhouser 2015). Wustenhagen et al. (2007) emphasized the local acceptance of renewables and community ownership to increase PV adoption. Furthermore, Goldthau (2014) suggested adoption of polycentric governance of energy infrastructures would promote resilient, decentralized energy systems. 
 
+Furthermore, some studies argued social science would address the reliability issue. For example, Alstone et al. (2015) pointed out social science is necessary to provide reliable energy services and Goldthau (2014) suggested Social science would be helpful to provide the reliable energy services as polycentric governance is critically related to socioeconomic actors. In addition, Wang and Reed (2017) argued that social science involvement may be necessary to investigate the infrastructure resilience from the community perspectives in addition to the infrastructure operators’ perspectives. 
 
-Using the features, socio-economic characteristics, peer effects, and policy interventions, a prediction model will be constructed with respect to a linearRegression model compared to Ridge, Lasso, and Elastic net regression models. Regularization is necessary to avoid overfitting which leads to higher variation when applying the model to other data sets. It is bias-variance tradeoff that a localized model is hard to be generalizable for other data sets. Regularization helps to avoid overfitting by adding  penalty term to the loss function. A penalty term prevents model parameters (feature weights) from becoming larger. The best model could be identified in terms of accuracy and root square mean error (RSME).
+In summary, this study will address social equity related to diffusion of clean energy technologies in consideration of resilient and reliable energy systems. The present study will first perform empirical analyses of residential PV and EV chargers in Seattle, WA with two main sub-aims: (1) to verify if there are spatial patterns in the distribution of the clean energy technology installations, and (2) to determine which factors related to socioeconomic and built environment characteristics contribute to uneven distribution. Second, peer effects will be investigated to determine whether or not they significantly influence diffusion trends with spatio-temporal patterns. Third, a diffusion model will be developed based on PV and EV adoptions in Seattle and will be verified  with the identified factors and peer effects on diffusion of clean energy technologies. Lastly, vulnerable communities due to the uneven diffusion rates of PV and EV will be identified. The prediction model will estimate the future impact of clean energy technologies socially and technically on communities. 
 
-There are several machine learning algorithms. For example, a support vector machine (SVM) separates data using a hyperplane which is defined by support vectors or the nearest observations. Depending on the tolerance of margin violations, there are soft and hard margin classifcations. An SVM regressor with Gaussian RBF kernel is a special form of SVM that has higher dimentional feature vectors added by Gaussian RBF. There are several kernels such as polynomial and sigmoid. The benefit of kernel is the classfier can be flexible enough to separate data without involving addtional features. A random forest model features entailing randomness when training a model that helps promoting diversity leading to a better model performance. This algorithm is an ensembles of decision trees that try to separate data into homogenous groups by setting thresholds. Extra-trees even randomize the thresholds to have a more diversity environment for the model get trained. A gradient boosting model fits data then keeps fitting the residuals in sequence by adding predictors. These algorithms have several hyperparameters that could be searched for the best model performances by using modules such as randomizedSearchCV and gridsearchcv. All the models could be fitted with the optimal hyperparameters found. 
-
-Gradient descent is a generic optimization algorithm in machine learning. For example, to minimize a cost function $f(\theta)$, we star with an arbitrary point $\theta^{0}$ and repeat the algorithm until it is near the optimal point. The cost function could be various depending upon the context. The goal is the find the weights ($\theta$) which minimize the cost function. 
-
-$$
-\begin{aligned}
-\theta^{k + 1} = \theta^{k} - \eta_k\nabla f(\theta^{k}) 
-\end{aligned} 
-$$
-
-where, $\nabla f(\theta^{k})$ = the direction of steepest descent of f at a point $\theta$; $\eta_k$ = "step size" or "learning rate." $\theta^{k+1}$ has a better value than $\theta^{k}$. With each step of Gradient desent, the value function gets better. Eventually, the algorithm converges to a local minimum. 
-
-
-## Result and Contribution (expected)
-
-The expected vulnerable communities are identified due to the higher diffusion rate. A prediction model is suggested to estimate the future impact of addtion of clean energy technologies such as PV and EV. Policy makers and utilities can refer to this result to plan their investment on energy distribution systems and scalable renewable energy infrastructures. Identifying the most vulnerable communities will help independent system operator (ISO) to take appropriate actions as well. 
-
-
-# Conclusion 
-
-The climate change has led to development of clean energy polices, which has encouraged deployment of sustainable and resilient energy and transportation systems. Sustainable energy systems may mitigate climate change by reducing greenhouse gas emissions while resilient energy systems may improve the systems more robust in response to climate change. Energy divide, which might be a direct result of the rapid transition of energy systems, could affect the community resilience by uneven distribution of services. Empirical analyses were performed to verify the current status of distribution of one of the clean energy technologies, residential PV and EV charger in Seattle. The study results shows that PV and EV charger infrastructures are concentrated on neighbors with higher housing ownership rates, higher single family housing rates, and higher income levels. These neighbors were categorized based on the housing and socio-economic characteristics to support policy makers to develop a policy that better help underserved communities under limited resources (e.g., those who rent multi-family houses and have less access to finance for EVs and chargers). The study identified the neighbors more sensitive to the particular characteristics expecting to help policy makers devise policies leading to equitable clean energy policies and access to clean energy technologies.
-
-In this regard, the impact of policy interventions and peer effects on diffusion of the technologies were analysed and discussed. Clean energy technologies play a role in communtiy resilience because decentralized energy systems such as residential solar are more reliable in response to climate change. Resilience was discussed by focusing on “preparation” and “availability” of energy systems. Vulnerability was explained in terms of energy dependency and situational conditions. Moremore, desirable characteristics of resilient energy systems were discussed as integrated energy system (IES) and distributed energy resources (DERs) featuring integrated energy diversity and decentralized energy systems. Finally, the proposed diffusion prediction model could encourage the social equity by identifying vulnerable communities in clean energy technologies or those, who were unable to host the technologies. It is because well planned distribution of clean energy technologies could take advantage of two features - IES and DERs - while taking into account energy dependency in a situational conditions and preparatory resilience in favor of energy availability.
-
-Social justice was questioned because the uneven distribution of clean energy technologies confirms that there were certain communities left out from receiving benefits from the clean energy technologies by verifying the relationship between the distribution patterns and socio-economic characteristics. The study revealed that (1) there is a clustered pattern in the distribution of PV and EV chargers, (2) housing stability and economic status explain the uneven distribution, and (3) there is area, where residential PV and EV charger installations are more sensitive to the economic status and housing stability. The analyses questioned ethical issue of social equity.
-
-Self-sufficient energy system or decentralized energy production has increased the resilience of human societies and communities. So has done energy diversity, which is compared to the biological diversity keeping ecosystem healthy and stable. Diversification effect lessens the volatility or risk by having less correlated characteristics as a whole leading to a healthy society. Likewise, energy diversity, in the context of diverse energy sources, would reduce the risk of human society, thus enhance the stability of the built environment. Decentralized and diversified energy systems would enhance the community resilience in terms of vulnerability and resilience in response to climate change. 
+This will help policy makers to better support underserved communities with limited resources (e.g., renters and low-income households that have less disposable income for PV and EV) by devising equitable policies in response to climate change. Furthermore, the study results will support policy makers and system operators to make informed investment decision on allocating energy distribution systems and scalable renewable energy infrastructures for vulnerable communities. 
 
 
 # Reference 
 
-* “5 Corporate Renewable Energy Trends to Watch in 2020.” (n.d.). LevelTen Energy.
-* Araújo, K., Boucher, J. L., and Aphale, O. (2019). “A clean energy assessment of early adopters in electric vehicle and solar photovoltaic technology: Geospatial, political and socio*demographic trends in New York.” Journal of Cleaner Production, 216, 99–116.
-* “As corporate renewable buying surges, innovative PPAs pressure utilities to improve green tariffs.” (n.d.). Utility Dive, <https://www.utilitydive.com/news/> (Feb. 21, 2020).
-* Balta-Ozkan, N., Yildirim, J., and Connor, P. M. (2015). “Regional distribution of photovoltaic deployment in the UK and its determinants: A spatial econometric approach.” Energy Economics, 51, 417–429.
-* Chan, G., Evans, I., Grimley, M., Ihde, B., and Mazumder, P. (2017). “Design choices and equity implications of community shared solar.” The Electricity Journal, Energy Policy Institute’s Seventh Annual Energy Policy Research Conference, 30(9), 37–41.
-* Curtius, H. C., Hille, S. L., Berger, C., Hahnel, U. J. J., and Wüstenhagen, R. (2018). “Shotgun or snowball approach? Accelerating the diffusion of rooftop solar photovoltaics through peer effects and social norms.” Energy Policy, 118, 596–602.
-* Dharshing, S. (2017). “Household dynamics of technology adoption: A spatial econometric analysis of residential solar photovoltaic (PV) systems in Germany.” Energy Research & Social Science, 23, 113–124.
-* Duan, H., Zhang, G., Wang, S., and Fan, Y. (2018). “Peer interaction and learning: Cross-country diffusion of solar photovoltaic technology.” Journal of Business Research, 89, 57–66.
-* Graziano, M., Fiaschetti, M., and Atkinson-Palombo, C. (2019). “Peer effects in the adoption of solar energy technologies in the United States: An urban case study.” Energy Research & Social Science, 48, 75–84.
-* Heymann, F., Lopes, M., vom Scheidt, F., Silva, J. M., Duenas, P., Soares, F. J., and Miranda, V. (2019). “DER adopter analysis using spatial autocorrelation and information gain ratio under different census-data aggregation levels.” IET Renewable Power Generation.
-* van der Kam, M. J., Meelen, A. A. H., van Sark, W. G. J. H. M., and Alkemade, F. (2018). “Diffusion of solar photovoltaic systems and electric vehicles among Dutch consumers: Implications for the energy transition.” Energy Research & Social Science, 46, 68–85.
-* van der Kam, M., and van Sark, W. (2015). “Smart charging of electric vehicles with photovoltaic power and vehicle-to-grid technology in a microgrid; a case study.” Applied Energy, 152, 20–30.
-* Litjens, G. B. M. A., Kausika, B. B., Worrell, E., and van Sark, W. G. J. H. M. (2018). “A spatio-temporal city-scale assessment of residential photovoltaic power integration scenarios.” Solar Energy, 174, 1185–1197.
-* Lukanov, B. R., and Krieger, E. M. (2019). “Distributed solar and environmental justice: Exploring the demographic and socio-economic trends of residential PV adoption in California.” Energy Policy, 134, 110935.
-* Mah, D. N., Wang, G., Lo, K., Leung, M. K. H., Hills, P., and Lo, A. Y. (2018). “Barriers and policy enablers for solar photovoltaics (PV) in cities: Perspectives of potential adopters in Hong Kong.” Renewable and Sustainable Energy Reviews, 92, 921–936.
-* Martinopoulos, G., and Tsalikis, G. (2018). “Diffusion and adoption of solar energy conversion systems – The case of Greece.” Energy, 144, 800–807.
-* Muchunku, C., Ulsrud, K., Palit, D., and Jonker‐Klunne, W. (2018). “Diffusion of solar PV in East Africa: What can be learned from private sector delivery models?” WIREs Energy and Environment, 7(3), e282.
-* Nygaard, I., Hansen, U. E., Mackenzie, G., and Pedersen, M. B. (2017). “Measures for diffusion of solar PV in selected African countries.” International Journal of Sustainable Energy, 36(7), 707–721.
-* Palm, A. (2016). “Local factors driving the diffusion of solar photovoltaics in Sweden: A case study of five municipalities in an early market.” Energy Research & Social Science, 14, 1–12.
-* Palm, A. (2017). “Peer effects in residential solar photovoltaics adoption—A mixed methods study of Swedish users.” Energy Research & Social Science, 26, 1–10.
-* Pless, J., Fell, H., and Sigrin, B. (2020). “Information Searching in the Residential Solar PV Market.” The Energy Journal, 41(4).
-* Poruschi, L., and Ambrey, C. L. (2019). “Energy justice, the built environment, and solar photovoltaic (PV) energy transitions in urban Australia: A dynamic panel data analysis.” Energy Research & Social Science, 48, 22–32.
-* “Powered By Faith, Religious Groups Emerge As A Conduit For A Just Solar Boom.” (n.d.). NPR.org, <https://www.npr.org/2019/12/15/784483810/powered-by-faith-religious-groups-emerge-as-a-conduit-for-a-just-solar-boom> (Dec. 16, 2019).
-* Strupeit, L., and Palm, A. (2016). “Overcoming barriers to renewable energy diffusion: business models for customer-sited solar photovoltaics in Japan, Germany and the United States.” Journal of Cleaner Production, Advancing Sustainable Solutions: An Interdisciplinary and Collaborative Research Agenda, 123, 124–136.
-* Wolske, K. S., Todd, A., Rossol, M., McCall, J., and Sigrin, B. (2018). “Accelerating demand for residential solar photovoltaics: Can simple framing strategies increase consumer interest?” Global Environmental Change, 53, 68–77.
-* Wood, E. (2019). “Santa Barbara School District Looks at 18 Sites for Microgrids.” Microgrid Knowledge.
+*	Ajaz, W. (2019). “Resilience, environmental concern, or energy democracy? A panel data analysis of microgrid adoption in the United States.” Energy Research & Social Science, 49, 26–35.
+*	Araújo, K., Boucher, J. L., and Aphale, O. (2019). “A clean energy assessment of early adopters in electric vehicle and solar photovoltaic technology: Geospatial, political and socio-demographic trends in New York.” Journal of Cleaner Production, 216, 99–116.
+*	Augustine, P., and McGavisk, E. (2016). “The next big thing in renewable energy: Shared solar.” The Electricity Journal, 29(4), 36–42.
+*	Baba, H., and Asami, Y. (2017). “Regional Differences in the Socio-economic and Built-environment Factors of Vacant House Ratio as a Key Indicator for Spatial Urban Shrinkage</b>.” Urban and Regional Planning Review, 4(0), 251–267.
+*	Balta-Ozkan, N., Yildirim, J., and Connor, P. M. (2015). “Regional distribution of photovoltaic deployment in the UK and its determinants: A spatial econometric approach.” Energy Economics, 51, 417–429.
+*	Bollinger, B., and Gillingham, K. (2012). “Peer Effects in the Diffusion of Solar Photovoltaic Panels.” Marketing Science, INFORMS, 31(6), 900–912.
+*	Bouzarovski, S., and Simcock, N. (2017). “Spatializing energy justice.” Energy Policy, 107, 640–648.
+*	Bouzarovski, S., and Tirado Herrero, S. (2017). “The energy divide: Integrating energy transitions, regional inequalities and poverty trends in the European Union.” European Urban and Regional Studies, 24(1), 69–86.
+*	Brown, A. C. (2016). “The value of solar writ large: A modest proposal for applying ‘value of solar’ analysis and principles to the entire electricity market.” The Electricity Journal, 29(9), 27–30.
+*	Brudermann, T., Reinsberger, K., Orthofer, A., Kislinger, M., and Posch, A. (2013). “Photovoltaics in agriculture: A case study on decision making of farmers.” Energy Policy, 61, 96–103.
+*	Chan, G., Evans, I., Grimley, M., Ihde, B., and Mazumder, P. (2017). “Design choices and equity implications of community shared solar.” The Electricity Journal, 30(9), 37–41.
+*	Chen, W., and Wellman, B. (2004). “THE GLOBAL DIGITAL DIVIDE – WITHIN AND BETWEEN COUNTRIES.” (7), 8.
+*	Curtius, H. C., Hille, S. L., Berger, C., Hahnel, U. J. J., and Wüstenhagen, R. (2018). “Shotgun or snowball approach? Accelerating the diffusion of rooftop solar photovoltaics through peer effects and social norms.” Energy Policy, 118, 596–602.
+*	Dharshing, S. (2017). “Household dynamics of technology adoption: A spatial econometric analysis of residential solar photovoltaic (PV) systems in Germany.” Energy Research & Social Science, 23, 113–124.
+*	“Diffusion of innovations. BY Everett M. Rogers. The Free Press of Glencoe Division of The Macmillan Co., 60 Fifth Avenue, New York 11, N. Y., 1962. xiii + 367 pp. 14 × 21 cm. Price $6.50.” (1963). Journal of Pharmaceutical Sciences, 52(6), 612–612.
+*	Drury, E., Miller, M., Macal, C. M., Graziano, D. J., Heimiller, D., Ozik, J., and Perry IV, T. D. (2012). “The transformation of southern California’s residential photovoltaics market through third-party ownership.” Energy Policy, 42, 681–690.
+*	Dubey, A., Santoso, S., and Maitra, A. (2015). “Understanding photovoltaic hosting capacity of distribution circuits.” 2015 IEEE Power Energy Society General Meeting, 1–5.
+*   ESIG. (2019). “Toward 100% Renewable Energy Pathways: Key Research Needs.” ENERGY SYSTEMS INTEGRATION GROUP.
+*	Fuller, S., and McCauley, D. (2016). “Framing energy justice: perspectives from activism and advocacy.” Energy Research & Social Science, 11, 1–8.
+*	Funkhouser, E., Blackburn, G., Magee, C., and Rai, V. (2015). “Business model innovations for deploying distributed generation: The emerging landscape of community solar in the U.S.” Energy Research & Social Science, 10, 90–101.
+*	Gillingham, K., Harding, M., and Rapson, D. (2012). “Split Incentives in Residential Energy Consumption.” The Energy Journal, International Association for Energy Economics, 33(2), 37–62.
+*	Gilson, E. (2013). “The Ethics of Vulnerability | A Feminist Analysis of Social Life and Practice | Taylor & Francis Group.” <https://www.taylorfrancis.com/books/9780203078136> (Jun. 13, 2019).
+*	Goldthau, A. (2014). “Rethinking the governance of energy infrastructure: Scale, decentralization and polycentrism.” Energy Research & Social Science, 1, 134–140.
+*	Graziano, M., Fiaschetti, M., and Atkinson-Palombo, C. (2019). “Peer effects in the adoption of solar energy technologies in the United States: An urban case study.” Energy Research & Social Science, 48, 75–84.
+*	Graziano, M., and Gillingham, K. (2015). “Spatial patterns of solar photovoltaic system adoption: The influence of neighbors and the built environment.” Journal of Economic Geography, Oxford Academic, 15(4), 815–839.
+*	Heffron, R. J., and McCauley, D. (2017). “The concept of energy justice across the disciplines.” Energy Policy, 105, 658–667.
+*	Heiskanen, E., and Matschoss, K. (2017). “Understanding the uneven diffusion of building-scale renewable energy systems: A review of household, local and country level factors in diverse European countries.” Renewable and Sustainable Energy Reviews, 75, 580–591.
+*	Heymann, F., Lopes, M., vom Scheidt, F., Silva, J. M., Duenas, P., Soares, F. J., and Miranda, V. (2019). “DER adopter analysis using spatial autocorrelation and information gain ratio under different census-data aggregation levels.” IET Renewable Power Generation.
+*	Hirsch, A., Parag, Y., and Guerrero, J. (2018). “Microgrids: A review of technologies, key drivers, and outstanding issues.” Renewable and Sustainable Energy Reviews, 90, 402–411.
+*	Hofierka, J., Kaňuk, J., and Gallay, M. (2014). “The Spatial Distribution of Photovoltaic Power Plants in Relation to Solar Resource Potential: The Case of the Czech Republic and Slovakia.” Moravian Geographical Reports, Sciendo, 22(2), 26–33.
+*	Irfan, U. (2018). “Puerto Rico and the US Virgin Islands are in the longest blackout in US history - Vox.” <https://www.vox.com/energy-and-environment/2017/10/30/16560212/puerto-rico-longest-blackout-in-us-history-hurricane-maria-grid-electricity> (May 25, 2018).
+*	Jean, N., Burke, M., Xie, M., Davis, W. M., Lobell, D. B., and Ermon, S. (2016). “Combining satellite imagery and machine learning to predict poverty.” Science, 353(6301), 790–794.
+*	Jenkins, K., McCauley, D., Heffron, R., Stephan, H., and Rehner, R. (2016). “Energy justice: A conceptual review.” Energy Research & Social Science, 11, 174–182.
+*	van der Kam, M. J., Meelen, A. A. H., van Sark, W. G. J. H. M., and Alkemade, F. (2018). “Diffusion of solar photovoltaic systems and electric vehicles among Dutch consumers: Implications for the energy transition.” Energy Research & Social Science, 46, 68–85.
+*	van der Kam, M., and van Sark, W. (2015). “Smart charging of electric vehicles with photovoltaic power and vehicle-to-grid technology in a microgrid; a case study.” Applied Energy, 152, 20–30.
+*	Karteris, M., and Papadopoulos, A. M. (2012). “Residential photovoltaic systems in Greece and in other European countries: a comparison and an overview.” Advances in Building Energy Research, Taylor & Francis, 6(1), 141–158.
+*	Keirstead, J. (2007). “Behavioural responses to photovoltaic systems in the UK domestic sector.” Energy Policy, 35(8), 4128–4141.
+*	Lee, M., Hong, T., Jeong, J., and Jeong, K. (2018). “Development of a rooftop solar photovoltaic rating system considering the technical and economic suitability criteria at the building level.” Energy, 160, 213–224.
+*	Lin, S., Fletcher, B. A., Luo, M., Chinery, R., and Hwang, S.-A. (2011). “Health Impact in New York City During the Northeastern Blackout of 2003.” Public Health Reports, 126(3), 384–393.
+*	Lin, Y., and Bie, Z. (2016). “Study on the Resilience of the Integrated Energy System.” Energy Procedia, 103, 171–176.
+*	Litjens, G. B. M. A., Kausika, B. B., Worrell, E., and van Sark, W. G. J. H. M. (2018). “A spatio-temporal city-scale assessment of residential photovoltaic power integration scenarios.” Solar Energy, 174, 1185–1197.
+*	Lukanov, B. R., and Krieger, E. M. (2019). “Distributed solar and environmental justice: Exploring the demographic and socio-economic trends of residential PV adoption in California.” Energy Policy, 134, 110935.
+*	Mackenzie, C. (2013). “Vulnerability: New Essays in Ethics and Feminist Philosophy - Google Books.” <https://books.google.com/books?hl=en&lr=&id=6W9MAQAAQBAJ&oi=fnd&pg=PP1&dq=vulnerability+ethics&ots=CybV1ADLth&sig=fCvM7G6Oy-pW32O-Hkp3_22uhPw#v=onepage&q=vulnerability%20ethics&f=false> (Jun. 13, 2019).
+*	Mah, D. N., Wang, G., Lo, K., Leung, M. K. H., Hills, P., and Lo, A. Y. (2018). “Barriers and policy enablers for solar photovoltaics (PV) in cities: Perspectives of potential adopters in Hong Kong.” Renewable and Sustainable Energy Reviews, 92, 921–936.
+*	Martinopoulos, G., and Tsalikis, G. (2018). “Diffusion and adoption of solar energy conversion systems – The case of Greece.” Energy, 144, 800–807.
+*	Michaud, G. (2018). “Deploying solar energy with community choice aggregation: A carbon fee model.” The Electricity Journal, 31(10), 32–38.
+*	Muchunku, C., Ulsrud, K., Palit, D., and Jonker‐Klunne, W. (2018). “Diffusion of solar PV in East Africa: What can be learned from private sector delivery models?” WIREs Energy and Environment, 7(3).
+*	Müller, S., and Rode, J. (2013). “The adoption of photovoltaic systems in Wiesbaden, Germany.” Economics of Innovation and New Technology, Routledge, 22(5), 519–535.
+*	Nolan, J. M., Schultz, P. W., Cialdini, R. B., Goldstein, N. J., and Griskevicius, V. (2008). “Normative Social Influence is Underdetected.” Personality and Social Psychology Bulletin, SAGE Publications Inc, 34(7), 913–923.
+*	Noll, D., Dawes, C., and Rai, V. (2014). “Solar Community Organizations and active peer effects in the adoption of residential PV.” Energy Policy, 67, 330–343.
+*	Palm, A. (2016). “Local factors driving the diffusion of solar photovoltaics in Sweden: A case study of five municipalities in an early market.” Energy Research & Social Science, 14, 1–12.
+*	Poruschi, L., and Ambrey, C. L. (2019). “Energy justice, the built environment, and solar photovoltaic (PV) energy transitions in urban Australia: A dynamic panel data analysis.” Energy Research & Social Science, 48, 22–32.
+*	Rai, V., and Robinson, S. A. (2013). “Effective information channels for reducing costs of environmentally- friendly technologies: evidence from residential PV markets.” Environmental Research Letters, 8(1), 014044.
+*	Robles, F., Davis, K., Fink, S., and Almukhtar, S. (2017). “Official Toll in Puerto Rico: 64. Actual Deaths May Be 1,052.” The New York Times.
+*	Sánchez-Lozano, J. M., Teruel-Solano, J., Soto-Elvira, P. L., and Socorro García-Cascales, M. (2013). “Geographical Information Systems (GIS) and Multi-Criteria Decision Making (MCDM) methods for the evaluation of solar farms locations: Case study in south-eastern Spain.” Renewable and Sustainable Energy Reviews, 24, 544–556.
+*	Schaffer, A. J., and Brun, S. (2015). “Beyond the sun—Socioeconomic drivers of the adoption of small-scale photovoltaic installations in Germany.” Energy Research & Social Science, 10, 220–227.
+*	Scott, J., and Carrington, P. J. (2011). The SAGE Handbook of Social Network Analysis. SAGE Publications, London, UNITED KINGDOM.
+*	Seel, J., Barbose, G. L., and Wiser, R. H. (2014). “An analysis of residential PV system price differences between the United States and Germany.” Energy Policy, 69, 216–226.
+*	Shahidehpour, M., liu, xindong, Li, Z., and Cao, Y. (2017). “Microgrids for Enhancing the Power Grid Resilience in Extreme Conditions.” IEEE Transactions on Smart Grid, 1–1.
+*	Shang, L., Lee, H. W., Dermisi, S., and Choe, Y. (2020). “Impact of energy benchmarking and disclosure policy on office buildings.” Journal of Cleaner Production, 250, 119500.
+*	Sharifi, A., and Yamagata, Y. (2016). “Principles and criteria for assessing urban energy resilience: A literature review.” Renewable and Sustainable Energy Reviews, 60, 1654–1677.
+*	Sijm, J. P. M. (n.d.). “Cost and revenue related impacts of integrating electricity from variable renewable energy into the power system - A review of recent literature.” 52.
+*	Sovacool, B. K., Burke, M., Baker, L., Kotikalapudi, C. K., and Wlokas, H. (2017). “New frontiers and conceptual frameworks for energy justice.” Energy Policy, 105, 677–691.
+*	Sovacool, B. K., and Dworkin, M. H. (2015). “Energy justice: Conceptual insights and practical applications.” Applied Energy, 142, 435–444.
+*	Strupeit, L., and Palm, A. (2016). “Overcoming barriers to renewable energy diffusion: business models for customer-sited solar photovoltaics in Japan, Germany and the United States.” Journal of Cleaner Production, 123, 124–136.
+*	Vithayasrichareon, P., Mills, G., and MacGill, I. F. (2015). “Impact of Electric Vehicles and Solar PV on Future Generation Portfolio Investment.” IEEE Transactions on Sustainable Energy, 6(3), 899–908.
+*	Walter, R., Evans, A., and Atherwood, S. (2016). “Addressing the Affordable Housing Crisis for Vulnerable Renters: Insights From Broward County on an Affordable Housing Acquisition Tool.” Housing Policy Debate, 26(1), 123–149.
+*	Walter, R. J., and Li, Y. (2014). “Moving to Opportunity? An Examination of Housing Choice Vouchers on Urban Poverty Deconcentration in South Florida.”
+*	Wang, R., Walter, R. J., Arafat, A. A., Ding, X., and Naji, A. A. (2017). “Examining Neighborhood Opportunity and Locational Outcomes for Housing Choice Voucher Recipients: A Comparative Study between Duval County, Florida, and Bexar County, Texas: EXAMINING NEIGHBORHOOD OPPORTUNITY.” City & Community, 16(4), 421–446.
+*	Wang, S., and Reed, D. A. (2017). “Vulnerability and Robustness of Civil Infrastructure Systems to Hurricanes.” Frontiers in Built Environment, 3.
+*	Wolske, K. S., Todd, A., Rossol, M., McCall, J., and Sigrin, B. (2018). “Accelerating demand for residential solar photovoltaics: Can simple framing strategies increase consumer interest?” Global Environmental Change, 53, 68–77.
+*	Wüstenhagen, R., Wolsink, M., and Bürer, M. J. (2007). “Social acceptance of renewable energy innovation: An introduction to the concept.” Energy Policy, 35(5), 2683–2691.
+*	Xu, Y., Fu, C., Kennedy, E., Jiang, S., and Owusu-Agyemang, S. (2018). “The impact of street lights on spatial-temporal patterns of crime in Detroit, Michigan.” Cities, 79, 45–52.
+*	Yamagata, Y., Murakami, D., Minami, K., Arizumi, N., Kuroda, S., Tanjo, T., and Maruyama, H. (2016). “Electricity Self-Sufficient Community Clustering for Energy Resilience.” Energies, 9(7), 543.
+*	Zimmerman, R., Zhu, Q., de Leon, F., and Guo, Z. (2017). “Conceptual modeling framework to integrate resilient and interdependent infrastructure in extreme weather.” Journal of Infrastructure Systems, 23(4), 04017034.
+
+# Energy Justice
+
+Q1. The energy justice literature has been framed into several categories including distributional, recognition, procedural, and restorative justice for example. Discuss the literature within these emerging themes and the major contributions that have advanced our understanding and knowledge in each area and how this work is impacting energy planning and policymaking. Describe how your dissertation work is framed within this literature and how you are advancing this body of knowledge.
+
+## Introduction
+
+Energy systems have been changing in the human history - especially modern transition to distributed energy systems increasingly rely on low-carbon and advanced energy resources. However, this transition will not be just if certain populations receive the burdens disproportionately and are excluded from the new opportunities this transition offers. It would be even worse if decision-making processes are not accessible to all the populations including vulnerable communities. Therefore, it is important to identify how energy contributes social equity and further to define energy justice. 
+
+## Social equity in energy justice 
+
+Social equity is essential to energy justice because energy and societal transformation has the potential to amplify equity issues as the distribution of benefits seems to be localized in higher income areas (Poruschi et al. 2019). Social equity can be addressed with environmental justice for fair treatment and involvement of the populations in the development, implementation and enforcement of public laws, regulations, and policies. The fair treatment and involvement should be inclusive of all people regardless of race, gender, origin, and income level. In this regard, energy justice has been framed further from environmental and climate justice (Fuller and McCauley 2016). For example, Heffron and McCauley (2017) introduced a concept, "family resemblances" as if overlapping and crisscrossing to suggest similarities of energy justice to environmental justice in 1970s and climate justice in 1990s. 
+
+## Energy justice 
+
+Energy justice from an inter-disciplinary perspective has recently received significant attention from justice scholars (Jenkins et al. 2016). As a result, energy justice has been conceptualized as one specific academic field in energy with the concern of equal distribution of costs imposed on communities and benefits from the access of the modern energy in addition to procedures of inclusive decision making (Sovacool et al. 2015). Energy justice applies justice principles to energy policy, energy production and delivery systems, energy consumption, and energy security (Jenkins et al. 2016). Furthermore, energy justice involves issues about affordable energy, energy security, fuel poverty (i.e., energy vulnerability on distributional unfairness), and politics of energy infrastructure (Fuller and McCauley 2016). 
+
+Sovacool and Dworkin (2015) suggested eight principles of energy justice as a decision-making tool for energy policy: (1) availability for energy security of supply; (2) affordability such as stable electricity prices; (3) due process of stakeholder's participation in policy making process; (4) good governance with information, accountability, and transparency; (5) sustainability i.e., meeting the needs of the present without compromising the needs of future generations; (6) intergenerational equity for present and future generation; (7) intragenerational equity for different communities access to energy; and (8) responsibility for environment, climate change, future generation, and non-human species. Moreover, Sovacool et al. (2017) suggested two more principles: (9) resistance, which is standing up to injustice and (10) intersectionality, which is intertwined with socioeconomic, political and environmental aspects. 
+
+
+## Distributional, recognition and procedural energy justice 
+
+Energy justice has been framed in distributional, recognition and procedural aspects for energy production and consumption (Jenkins et al. 2016). First, distributional justice identifies concerns in resource distribution by focusing on where are the uneven distribution of benefits, ills, and responsibilities associated with the uneven distribution. Second, recognition justice focuses on who it affects such as vulnerable communities which are left out from the benefits of renewable energy. The lack of recognition justice entails losing the insights of marginalized social groups. This could be even worse due to the social gap between global and local perceptions in recognizing the impact of a local energy infrastructure. Lastly, procedural justice identifies strategies for remediation in terms of decision-making, local knowledge mobilization, information disclosure, and institutional representation (Jenkins et al. 2016).
+
+Jenkins et al. (2016) further, discussed those categorized frames of energy justice in terms of evaluative and normative reach. In the evaluative reach, distributional justice asks "where are the injustices?"; recognition justice, "who is ignored?"; and procedural justice, "is there fair process?" in order to investigate the mechanisms of energy justice. On the other hand, normative reach suggests remediation of the energy injustice by asking "how should we solve them?" for distributional justice, "how should we recognize?" for recognition justice, and "which new processes?" for procedural justice (Jenkins et al. 2016). Those questions help address energy injustice in energy planning and policymaking since regulatory agencies have started to consider social equity, health, and environmental factors in policy decision-making (Lukanov et al. 2019). 
+
+
+## Restorative energy justice 
+
+Jenkins et al. (2016) suggested three areas for future research: investigating non-activist origins of energy justice, engaging with economics, and uniting systems of production and consumption based on addressing distributional (what), recognition (who), and procedural (how) aspects. In this regard, restorative justice was introduced as an application in practice for energy justice through the concept of energy justice, education and engagement with economic policymaking (Heffron and McCauley 2017). First, restorative justice ensures energy justice to be applied in practice from three tenets - distribution, procedural and recognition justice. Life-cycle of an energy system, then, is considered in the context of a cosmopolitan perspective. For example, for an energy project, three phases could be outlined: (1) environmental impact assessments (when a project is designed or built); (2) social-license-to-operate with the local communities over the life-span of the energy infrastructure; and (3) energy financial reserve obligation to ensure the financial capacity to end the enregy infrastructure. Lastly, the ten principles of a decision-making tool described above would be employed to apply energy justice in practice to address injustice challenges (Heffron and McCauley 2017). 
+
+## Energy justice to energy planning and policymaking
+
+"Systems" thinking was suggested to include externalities for transition to low-carbon sources spanning resource mining, transmission, and waste in terms of social, economic, and environmental impacts (Jenkins et al. 2016). Heffron and McCauley (2017), further, suggested energy justice needs not only inter-disciplinary, but also multi- and trans-disciplinary practices of integration. This is because energy justice embraces other disciplines such as social equity, economics, politics, and environment which are combined and presenting emergent behaviors. However, energy policies have mainly focused on delivering low-cost outcomes as a goal supported by other disciplines. For example, World Energy Council (WEC) suggested "energy trilemma": energy security, environmental sustainability, and energy equity (i.e., affordability and accessibility) to aim at a low-cost energy. The energy trilemma shows the trend of economic-led policies aimed at low-cost and efficient outcomes. This trend has led to reliance on fossil fuels and as a result, a low-carbon energy infrastructure or a low-carbon economy becomes a secondary concern for energy policy. In this regard, Heffron and McCauley (2017) suggested more just energy trilemma: (1) economics, (2) politics in terms of energy security, and (3) environment for climate change mitigation in order for the energy law and policy to achieve energy justice. "Green" investment funds are examples of the energy trilemma focusing on the energy justice rather than the low-cost outcomes through energy planning and policy (Heffron and McCauley 2017). 
+
+![Energy trilemma - left: WEC, right: proposed (source: Heffron and McCauley, 2017)](trilemma.png)
+
+## The research framed in energy justice
+
+Recent global climate change has led to the development of various clean energy policies and technologies. Clean energy technologies are proven to increase resilience in response to the impacts of climate change in addition to their economic, health and environmental benefits. However, concerns regarding distributional and recognition energy justice have emerged with the current rapid transition of energy systems toward clean energy technologies. 
+
+First, the transition can inadvertently result in the uneven distribution of the clean energy technologies, and accordingly has the potential to disproportionately influence how communities respond to any undesirable climate change-related events. This is because distributed energy systems are the results of the transition and have the potential to reduce energy poverty by promoting social equity (Sovacool et al. 2014). Furthermore, the transition to renewable energy sources allows just distribution of risks in terms of an electricity generation by involving larger populations compared to a centralized solution (Jenkins et al. 2016). However, uneven distribution of new energy systems could be described as the "energy divide" (i.e., inequalities in access to energy services) which is similar to the "digital divide" in the late 20th century where uneven distribution of telecommunication infrastructure caused issues in social equity, which aims to provide equal opportunities to people regardless of who they are (i.e., recognition justice) and where they live (i.e., distributional justice). In this regard, uneven distribution of energy production facilities has been mainly approached by environmental justice while an affordable energy access has been discussed in terms of income equality from the perspective of energy consumption (Fuller and McCauley 2016). 
+
+Second, having more distributed clean energy technologies requires improvement of the grid system and it leads to higher electricity bills as a form of regressive taxation to customers including low-income households, who may not have access to these technologies. For example, reliability of the power supply for the community can be inadvertently affected by the intermittent power generation of photovoltaic systems (PV) and uncertain charging schedules of electric vehicles (EV). This challenges system operators (ISO) requiring improved forecasting, new operating tools ensuring stability, and coordination between systems. This is specially true for communities with higher decentralization trends due to the lack of active generation and demand connectivity as the communities require more diverse and less correlated power sources, energy storage and demand participation. In addition, those customers, who do not install clean energy technologies, might be unfairly charged for the costs to maintain transmission and distribution (T & D) infrastructure (Brown 2016). 
+
+Furthermore, rebates, tax credits, production performance credits, property tax exemptions, and sales tax exemptions have led to energy inequalities as the forms of regressive taxation benefiting wealthier households by taxation on populations including low-income households (Poruschi et al. 2019). For example, Fit-in Tariffs (FiTs) lead to distributional injustice for low-income communities by transmitting the costs associated with infrastructure of decentralized electricity supplies to electricity consumers (Jenkins at al. 2016). Opportunities to take part in the incentives are hard for those who cannot afford to invest in the clean energy technologies. As a result, the cost burdens of the grid modernization and the regressive taxation are distributed to customers including those who may not have access to the technologies. 
+
+In addition, Bouzarovski and Simcock (2017) claimed the lack of geography in consideration of the injustice of energy poverty in terms of spatial justice, which is the geographical dimension of inequality and inequity. Spatial justice was discussed in regard to (1) landscapes of material deprivation for infrastructure and built environment; (2) geographic underpinnings of energy affordability (i.e., energy prices and household incomes); (3) vicious cycles of vulnerability as poor health occurs due to material and socioeconomic spatial inequalities; and (4) spaces of misrecognition, which is defined by recognition injustice (i.e., not identifying or ignoring certain groups where household practices are affected). They argued energy transitions are generators of geographically uneven social, political and environmental displacements which are leading to vulnerability of particular groups (Bouzarovski and Simcock 2017).
+
+In response to these concerns, this research aims to study spatial diffusion dynamics of clean energy technologies (PV and EV) in the residential built environment in consideration of distributional and recognition justice. This research will identify socially and technically vulnerable neighborhoods (i.e., who, recognition justice) with regard to the uneven and unbalanced distribution of clean energy technologies (i.e., where, distributional justice) aimed at resilience against climate change and reliability of energy systems. 
+
+## Advancing the body of knowledge
+
+This research has the potential for significant implications to both energy policy analysis and electricity network planning as it involves energy justice, public policy and urban planning. The present research will reveal social equity issues (i.e., certain communities are underserved) based on the uneven distribution of benefits and costs of clean energy technologies by identifying vulnerable neighborhoods. This will help policy makers to better support any underserved communities with limited resources (e.g., renters and low-income households that have less disposable income for PV and EV) by devising equitable policies in response to climate change. Furthermore, the study results will support policy makers and system operators to make informed investment decision on allocating energy distribution systems and scalable renewable energy infrastructures for vulnerable communities in consideration of energy justice. This is because the fair distribution (i.e., distributional justice or redistribution) and impartiality in decision-making (i.e., procedural justice and empowerment) are interconnected in that energy justice should be the first to consider for populations the energy policies are intended to benefit (Sovacool and Dworkin 2015).
+
+# Spatial Autocorrelation
+
+Q2. Given that charging stations and solar generation sites are spatial points, discuss how you will address spatial structure (i.e., potential spatial autocorrelation) in your data and analysis.
+
+## Spatial perspective in the data
+
+Darmofal (2015) argued that units often interact with each other and affect each other's behavior. This interaction is mainly from spatial proximity in that units that are more geographically proximate are more likely to interact with each other. He added that units often exhibit similar outcomes as a result of shared environmental influences even if there is no physical interaction. In this regard, spatial analyses are important to address the spatial proximity and dependent characteristics in a study area. Currently, several spatial methods are available due to the development of computing power such as Geographical Information Systems (GIS) and data availability with possible collection of multiple spatial data sets at different geographical scales. 
+
+There are 3 data types representing spatial characteristics: (1) area, (2) point, and (3) geostatistics because observations are collected in forms of points (i.e., point or geostatistical data) or regions (i.e., area data) located in space. Area data are carried out by aggregation over a defined boundary such as an administrative unit (e.g., census tract). Point data exhibit the actual configuration of points over the study area. On the other hand, geostatistical data represent the characteristics of the interest subjects at residential locations as points. In this regard, it is important to design how to collect data because it affects the spatial characteristics in a spatial analysis. Sampling mechanism is addressing how data are collected. For example, survey data with a complex design would need weighted analyses if the data are not a random sample in space. If the data are not a simple random sample, clustering patterns won't make sense in regard to the spatial structure in the analysis due to the involved bias in the data collection. 
+
+The research data include geographical coordinates (i.e., latitudes and longitudes) of photovoltaic systems (PV) and electric vehicle (EV) charger installations. Since the data are complete enumeration, clustering analyses will verify distributional patterns of the clean energy technologies by mapping the points of PV or EV chargers in the region. This will verify certain spatial patterns in the installations. Furthermore, by aggregating the point data by a census tract (CT), spatial regression models could be constructed to find the relationship between the installations and CT's socio-economic characteristics, which are normally available in the CT level from American Community Survey (ACS). 
+
+As aggregation of polygon is needed for the analysis due to the data availability of socio-economic characteristics, the point data will be aggregated by a CT level. Since the socio-economic characteristics are human related, aggregation in the CT level, the political boundary, may capture the local socio-economic characteristics. But if it is about environmental features, then it would not be the case. However, data aggregation may lead to ecological fallacy where conclusions based on group-level data are different from those based on an analysis which uses individual-level data. Furthermore, aggregation of data may also lead to modifiable areal unit problem (MAUP), where the inconsistency of results under different geographical configurations exists. MAUP consists of two components depending upon the different levels of spatial resolution and regroupings: the scale effect and the zoning effect (Dharshing 2017).
+
+
+## Clustering and spatial autocorrelation
+
+Spatial clustering presents a local spatial variation, which suggests spatial autocorrelation. There is spatial autocorrelation in a variable if observations that are closer to each other in space have related values (Tobler's Law). In other words, spatial autocorrelation is a dependence among areas related to the geographical positions. 
+
+Moran's I statistic (Moran 1948) is the most widely used method of testing for spatial autocorrelation, or spatial dependencies. If no spatial dependencies in the area exist, the test statistic would be close to zero (it ranges from -1 to 1). If the value is positive and close to 1, the interested area presents clustering. On the other hand, it would present dispersion if the value is negative and close to -1. Since the research is concerned about measuring the similarity of nearby features, Moran's I will be used because the measure will indicate that similar values occur together. However, it does not indicate whether any cluster is composed of high or low values, but General G statistic will do. In short, Moran's I will tell whether the data is clustered in general or autocorrelated while General G statistic will tell whether there are clusters of high and low values.
+
+Furthermore, there are other statistics to test the local spatial dependencies. For example, Hotspot analysis (Getis - Ord Gi*) compares the neighborhood cluster to the global within the study area. If the neighborhood where the feature is located in is significantly different from the average global study area, then the individual feature becomes a hot spot. Since it is by means of neighborhood, not the feature itself, a feature with a value close to the global mean value, could be still a hot spot. In addition, local Moran's I (i.e., cluster and outlier analysis) is similar to the hot spot statistic except that it compares a feature with its neighbor. 
+
+![An example of mapping point data showing clustering in Seattle](densi.jpg)
+
+Similarly, a semivariogram can tell a spatial dependence in unequally-spaced data. Points close together tend to be similar thus, the variance of the pairwise difference would be small while it will increase as the distance increases. At some distance, the points would be independent to each other. For example, there would be a certain distance that the model levels out. The distance where the model first flattens out is called "range". Sample locations separated by distances closer than the range are spatially autocorrelated while locations farther than the range are not. Furthermore, empirical distribution function (EDF) such as G function can also identify point patterns with respect to complete spatial randomness (CSR). The G estimation function of the nearest neighbor distances is defined as follows. 
+
+$$ \hat{G}(d) = \frac{\#(d_i \leq d)}{n} $$
+
+where, $d_i$ represents the distance from the i-th point to the nearest point and n is the number of points. It is simulated with several realizations under the null by resampling from n points and formed the G estimate for each set, and produced Monte Carlo envelopes (i.e., CSR). The estimates being off the evelopes indicates that the distribution is far from randomness. 
+
+![An example of G estimate showing spatial dependence](G.jpg)
+
+## Spatial regression 
+
+Once clustering is verified in the data, spatial autocorrelation should be addressed. Spatial regression models incorporate spatial effects, which define cross-sectional dependence presenting geographical similarity. This similarity is normally two dimensional and multidirectional. Since the proposed research is interested in the spatial pattern of the clean energy technologies in consideration of distributional energy justice, leveraging spatial dependencies in the analysis will address the spatial autocorrelation in estimating regression models. 
+
+Ignoring spatial dependence leads to biased and inconsistent estimate and loss of efficiency (Balta et al. 2015). In general, a linear regression model won't work if there is a spatial dependence in the error terms or regression residuals. This is because ordinary least squares (OLS) requires the error terms have constant variance and are uncorrelated each other. Furthermore, one of the regression assumptions is independence of observations. In other words, the observations should be independent of each other as well as the regression residuals. If this assumption is violated, the coefficient estimates could be wrong and we get inaccurate estimates of the coefficients, and the error term contains spatial dependencies. Error should not be distinguishable from random noise. 
+
+We need to specify a rule for determining the neighbors of each area to address the spatial autocorrelation. The common rule is to assign two areas as neighbors if they share a common boundary especially in the situation where all regions are similar in size and arranged in a regular pattern. The other ways to define neighbors are to take the distance such that regions within the distance become neighbors; or to consider cultural similarity. With an n x n spatial weight matrix (n is the number of observations), a vector of the means of the responses of the neighbor observations is created. This weight matrix is used in the estimation of spatial regression and the calculation of Moran's I. The spatial weight matrix, then, becomes the element of the spatial regression models as a "lag" term, which is a specification at nearby locations. 
+
+Mainly two models are considered to address the issue of spatial autocorrelation: (1) simultaneous autoregressive (SAR) and (2) conditional autoregressive (CAR) models mostly in econometrics and epidemiology studies (Banerjee at al. 2014). SAR specifies its variance-covariance matrix with more than first order dependencies so that this model is more suitable for a global spatial autocorrelation. SAR has three different forms depending on where the autoregressive process occurs including spatial lag model (SLM), spatial error model (SEM) and spatial Durbin model (SDM). For example, Graziano et al. (2019) addressed spatial spillovers regarding the built environment and jurisdictional boundaries using a SAR model, a special case of the general spatial Durbin model (SDM). Dharshing (2017) examined economic factors, socio-demographic and attitudinal adopter characteristics, settlement structure, and spillover effects between neighboring counties using SAR and SEM. The typical SDM equation is as follows. 
+
+$$
+\begin{aligned}
+Y = \rho WY+X\beta+WX\theta+u
+\end{aligned} 
+$$
+
+where $\rho$ is a spatial autoregressive parameter, and $\theta$ is a spatial lag in the independent variables. 
+
+SLM and SME is the special forms of SDM. For example, SDM becomes simplified into SLM when $\theta$ is zero, while it becomes SEM when $\theta$ becomes - $\rho\beta$ (Balta et al. 2015). 
+
+## Conditional spatial model 
+
+CAR assumes that only the neighbors influence the concerned feature by obeying the spatial Markov property. Since CAR features local spatial autocorrelation, this research will use an intrinsic conditional autoregressive (ICAR), a subclass of CAR models based on a Gaussian Markov Random Field (MRF). MRF decides the distribution of $S_i$ given the known values of the neighboring random variables $S_j$ (Rue and Held 2005). ICAR assumes that spatial random effect follows a normal distribution with the mean of the neighbors' random effects and the variance inversely proportional to the number of neighbors as follows (Beasg et al. 1991). 
+
+$$ S_i |S_j, J\in ne(i) \sim \mbox{N}(\overline{S_i},\frac{\sigma_s^{2}}{m_i}) $$
+where, ne(i) is the set of neighbors of area i, $\overline{S_i}$ is the mean of the spatial random effects of the neighbors, and $m_i$ is the number of neighbors. The parameter $\sigma_s^{2}$ is a conditional variance. 
+
+$$ var(S_i) = \sigma_s^{2} $$
+Since ICAR has a single parameter to decide the magnitude of variance and strength of dependence, a non-spatial random effect (i.e., IID) should be included in the ICAR random effect. This model was known as the BYM model introduced by Besag et al. (1991). This ICAR will be added to a lognormal model to allow spatial dependence in the model. 
+
+## Poisson log-linear model 
+
+The expected installation rate of PV or EV charger in a CT is estimated by the total number of housing units in the region and the number of installations. Standardized Installation Ratio (SIR) is defined by the number of PV or EV chargers ($Y_i$) over the expected number of PV or EV chargers ($E_i$) given the estimated proportion as follows. 
+
+$$ SIR_i = \frac{Y_i}{E_i} $$
+
+PV or EV charger rates are assumed to be associated with a Poisson count model considering its rare proportion with respect to the denominator (i.e., the total housing units) in a CT. In addition, since the number of PV or EV chargers are count data, a Poission log-linear model will be constructed as follows. 
+
+$$
+\begin{aligned}
+Y_i & \sim \mbox{Poisson}(E_i \theta_i)\\
+log\theta_i & = \beta_0 + x_i\beta_1 + S_i + \epsilon_i
+\end{aligned}
+$$
+where $Y_i$ is the number of PV or EV chargers, $E_i$ is the expected number of PV or EV chargers, $\theta_i$ is SIR, $x_i$ is a covariate, $S_i$ is random effects with spatial structure, and $\epsilon_i$ is non-spatial random effects in each CT. 
+
+A Poisson log-linear spatial model, especially using BYM2 method, will be tested to address any residual clustering issues using Bayesian method, an integrated nested Laplace approximations (INLA), which combines Laplace approximations and numerical integration in a very efficient manner. While Markov chain Monte Calro (MCMC) had been used, INLA is simpler and has a computation benefit for computing posterior summary measures. INLA enables Generalized Linear Mixed Models (GLMMs) to address temporal and spatial error terms with ICAR for spatial autocorrelation. INLA takes into account spatial dependencies and lognormal independent variance across CTs (Rue et al. 2009). The developed hierarchical or random effects model is as follows. 
+
+$$
+\begin{aligned}
+Y_i |\beta_{0},\beta_{1},\beta_{2},\beta_{3},S_i,\epsilon_i & \sim_{ind} \mbox{Poisson}(E_i \mbox{e}^{\beta_{0}+\beta_{1}X_{1i}+\beta_{2}X_{2i}+\beta_{3}X_{3i}} \mbox{e}^{S_i + \epsilon_i}),\\
+\epsilon_i | \sigma_\epsilon^{2} & \sim_{iid} \mbox{N}(0,\sigma_\epsilon^{2}),\\
+S_1,...,S_n | \sigma_s^{2} & \sim ~~~ \mbox{ICAR}(\sigma_s^{2}).
+\end{aligned}
+$$
+
+where $Y_i$ is the number of PV or EV chargers, $E_i$ is the expected number of PV or EV chargers, $X_1$, $X_2$, and $X_3$ are the predictors, $S_i$ is the spatial random effect and $\epsilon_i$ is the non-spatial random effect, all in a CT *i*. 
+
+## Geographically weighted regression
+
+A geographically weighted regression (GWR) model will also address the spatial autocorrelation in a local level by changing the coefficient of the covariates without involvement of the explicit spatial term (Gollini et al. 2015). GWR also presents the variance of the coefficients by fitting a regression equation to every feature in the dataset. This becomes possible by specifying the neighborhood type and neighborhood selection method. GWR identifies sensitivities of concerned covariates by identifying the coefficients of the covariates (Fotheringham et al. 2003). The model is as follows. 
+
+$$
+\begin{aligned}
+logY(s) = logE(s)+ \beta_{0}+\beta_{1}(s)X_1(s)+\beta_{2}(s)X_2(s)+\epsilon(s)
+\end{aligned}
+$$
+
+where $\beta_1$ and $\beta_2$ are coefficient estimators, and $X_1$ and $X_2$ are the covariates in a CT *s*.
+
+The research will first, test the regression residuals for spatial autocorrelation, using Moran's I for area data and G estimate for point data. If significant spatial autocorrelation exists and the spatial dependencies are significant, spatial models which takes spatial dependencies into account will be used (i.e., Poisson log-linear model and GWR). 
+
+# Barriers to Adoption of Clean Energy Technologies
+
+Q3. Efforts to promote clean energy technologies (PV systems and EV chargers) in the residential built environment can face different types of barriers, such as technology barriers, financial barriers, political & regulatory barriers, market barriers, etc. Based on the existing literature, discuss the implications of various barriers to the advancement of PV systems and EV chargers in the residential built environment, by each type.
+
+## Introduction 
+
+Clean energy policies have aimed at increasing adoption of clean energy technologies by mostly focusing on financial incentives and setting renewable energy targets (Strupeit and Palm 2016). However, diffusion of the technologies is not only by incentives, but also by removal of barriers and transaction costs (Strupeit and Palm 2016). Thus, it is important to identify barriers to adoption of clean energy technologies. Below overall barriers of mainly residential photovoltaic systems (hereafter PV) will be discussed followed by technical, financial, regulatory, market, and customer related barriers. Then, particular adoption barriers to shared solar and residential electric vehicle (hereafter EV) chargers will be discussed. 
+
+## Technical barriers
+
+Higher penetration of clean energy technologies has been resisted by utilities and system operators (ISO). This is because higher adoption of clean energy technologies will cause the electric demand to become more unstable by demanding more power plants back-ups due to the stochastic or intermittent characteristics of renewables (e.g., PV) and mismatching time coincidence between generation and load including EV charging (Brown 2016). This reliability issue causes running additional generating units to have a certain amount of operating reserve. However, It is controversial to quantify the value of reliability as the consequence of outage is context-dependent. The lost value includes not only monetary losses but also loss of comfort, and opportunity costs which are quite subjective. Most of residential electricity peak demand is evening while PV production reaches its peak in the afternoon. This off-peak characteristics of renewables are adding burden to utilities. Therefore, even if there is a certain amount of electricity generated from PV, they don’t add value on due to the off-peak generation. 
+
+The limit of the grid capacity is another technical barrier to adoption of clean energy technologies. Hosting capacity is the amount of distributed PV (DPV) that can be added to distribution system before control changes or system upgrades are required to safely and reliably integrate additional DPV. A number of factors influencing hosting capacity of a DPV system require several considerations, such as whether advanced inverter settings are utilized, the system size, and where it is located on the circuit. It includes the location and time-varying behavior of all distributed energy resources and the existing equipment on a circuit. As the system configuration evolves over time depending on investments made by utility companies, for DPV owners or developers, distribution planning practices are important especially when upgrades or other mitigation to the impact of the adoption are required (Dubey et al. 2015). 
+
+Furthermore, higher adoption of clean energy technologies makes the balance between supply and demand of electricity unstable. This is because higher demand leads to outage due to the lower frequency while lower demand leads to higher frequency. Generators are also limited to operating in a certain range of frequencies. In general generators feature mechanical inertia which acts like a shock absorber to outage or frequency drop. This helps electricity being reliable against any interruptions at no additional cost. Since electricity from PV lacks this feature, more back-up reserves are required to offset this risk.
+
+
+## Financial barriers
+
+High upfront cost is the barrier to adoption of clean energy technologies (Allen et al. 2008, Scarpa et al. 2010). Shih et al. (2011) also added that upfront cost and long payback are the barriers to adoption because economic viability is one of the main drivers to adoption. Mah et al. (2018) also argued that high upfront cost and long payback in addition to the availability of subsidies are the barriers to urban PV adoption. Furthermore, transaction costs (including costs for permission, administration and information obtainment) and accessibility to loans are the other barriers to adoption (Strupeit and Palm 2016). In particular, low and moderate income (LMI) households have a disadvantage to have access to solar loan due to the low credit scores (NREL 2018). Access to loan will promote the PV adoption through PV ownership. For example, in Germany, the most common business model for PV is the ownership model due to the profit from Feed-in Tarrifs (FiTs) and the low-interest loans (Strupeit and Palm 2016).
+
+
+## Political & regulatory barriers
+
+Government policies including regulations and financial supports such as grants, incentives, and tax credits are important to increase adoption of clean energy technologies and could be barriers if not well designed. This is because such policies affect the electricity markets in addition to how fast the distributed energy resources spread and how those transitions affect utilities in revenue. As a result, many states are working on reviews of rate designs such as modifying credit rates for the surplus electricity back to the grid, increasing fixed charges, adding demand charges, and allowing shared solar programs (NRRI 2019). 
+
+For example, California legislated net energy metering (NEM) paired with storage program to increase adoption such that facilities paired with storage can be exempt from interconnection application fees and distribution upgrade costs. Furthermore, California attracts customers to join NEM paired with storage program by introducing Self-Generation Incentive Program (SGIP) where customers are eligible to receive incentives depending on project size. However, there are some regulations to limit the size of the storage devices so that the grid could still be protected from the massive changes. For example, storage devices larger than 10 kW is required to have a maximum output power no larger than 150% of the NEM generator’s maximum output capacity (CESA 2018). NEM paired with storage benefits customers more as storage gives more flexibility of electricity consumption while there are still barriers for pairing storage to NEM such as higher upfront cost and uncertain policy changes.
+
+Complex process such as permission, vested interests against new energy options are the other barriers to adoption (Mah et al. 2018). This is because permission process is a part of soft costs of PV installation including pre-construction engineering, marketing, and installation labor (Seel at al. 2014). Furthermore, Seel at al. (2014) argued that higher soft costs including complex administration process in the US compared to Germany, had been a barrier to PV adoption. In this regard, policies have to focus on streamlining and facilitation of legal-administrative processes (Strupeit and Palm 2016). 
+
+
+## Market barriers 
+
+The electricity market has been changed mainly due to the involvement of local business and individual consumers to the market. First, the Public Regulatory Policies Act (PURPA) in 1978 led the local small business to enter the market by enabling power producers to be independent from utilities. Thus, utilities could only deal with transmission and distribution (T&D), operation, maintenance, and customer billing while customers can directly contact with independent power producers (IPP) (Mithcaud 2018). As a result, this allowed the local small clean energy business to enter the market which may benefits the local economy.
+
+Second, NEM makes it possible for the individual customers to join the markets. As a result, NEM has significantly affected PV adoption through influencing the market by giving credits to customers for generation of electricity from their own distributed system (Augustine and McGavisk 2016). Furthermore, virtual NEM credits multiple customers to offset the electrical load they consumed by electricity generated from a single or multiple renewable energy systems that they subscribed. Customers could benefit from virtual NEM by participating programs such as shared solar by subscription to the program, leasing, or owning the solar system (Augustine 2016).
+
+One of the market barriers are its higher dependence on government policies because government energy policy affects the markets by regulating monopolies and energy stakeholders. As a result, the government policies may incur misplaced incentives, unpriced costs, and difficult access to finance (Mah et al. 2018). For example, government incentives including tax credits, FiTs, and NEM have affected adoption of clean energy technologies. Poruschi and Ambrey (2019) suggested that FiTs are related to more PV installation trends. This is because FiTs attract more installations due to the financial benefits. Likewise, NEM has an economic benefit increasing PV adoption. For example, curtailment of NEM in Nevada had solar contractors discouraged and ending up leaving the market resulting in a drastic fall in residential PV installation in the following year (Muro 2016). 
+
+Utilities has been resistant to some clean energy policies such as net energy metering (NEM) in favor of residential PV and EV chargers. This is because utilities responsible for the grid operation and maintenance will have increasing burden to maintain the electric infrastructure due to losing the overall load or demand as clean energy technologies are distributed in a local level. In addition, centralized distribution systems need high upfront cost for large transmission and distribution (T & D) infrastructure. However, NEM may help to eliminate transmission and line losses, and even stabilize the local grid since distributed energy systems will lead to reduction in demand (Michaud 2018). Michaud (2018) added that it also enables a smoother electricity demand curve allowing utilities to manage peak demand better. 
+
+Furthermore, Energy and Environmental Economics (2016) analyzed that NEM enables utilities to reduce their overall costs of providing services through avoided costs which represents the benefit a distributed energy resource provides to the grid. The components of the avoided cost are energy generation, distribution loses, ancillary services, transmission capacity, distribution capacity, and system capacity. In addition, if carbon tax comes into play for reduction of air pollution, having more NEM in the grid would be more economical (CESA 2018). 
+
+Furthermore, there is the other concern about whether NEM would lead to the net benefit or loss to ratepayers. Some studies concluded that NEM does not impose a significant cost to ratepayers who are not taking part in NEM. For example, Lawrence Berkeley National Lab (2016) suggested the impacts of rooftop and commercial PV on average retail rates would be modest. In general, NEM would not affect ratepayers as much while it is still arguable about how this change affects utilities in terms of not only economy, but also technological issues such as system reliability and security.
+
+
+
+## Consumer-related barriers
+
+Social acceptance such as community involvement and information gaps are the consumer-related barriers (Mah et al. 2018, Shih et al. 2011). First, Noll et al. (2014) claimed that information needs to come from trusted sources for consumers' decision making to adopt PV. Furthermore, van der Kam et al. (2018) argued that adoption patterns are determined by the spread of information among consumers. In addition, transparency of information is the one of the significant factors for the good governance, one of the decision-making principles for energy justice (Sovacool and Dworkin 2015). Palm (2017), further, suggested disseminating information through seminars and internet web browsers to increase PV diffusion in consideration of importance of the spread of information. 
+
+Second, social influence is another barrier to adoption. This is because lack of community involvement or interactions would not help increasing PV adoption. For example, Wolske et al. (2018) found underlying consumer motivations and predispositions, such as perceived social support and consumer innovation, are more significant to decision making to PV adoption. Furthermore, Noll et al. (2014) pointed out the importance of perceived social support and peer effects by accommodating pro-solar opinion leaders, hosting workshops and connecting consumers with PV adopters in the community. Curtius et al. (2018) stressed the social influences on the decision to adopt PV by suggesting snowball effects which facilitate the creation of regional hot spots compared to the shotgun approach of uniform nationwide incentives.
+
+
+
+## Shared solar
+
+NREL (2015) estimated that about 50% of consumers and businesses are unable to host PV systems due to not owning house, not enough finance, and not enough area to install rooftop PV. Other reasons are: roof is too shaded or requiring re-roofing; the size, orientation, or type of roof are not proper; some equipment is obstructing a PV installation; multi-unit dwellings (MUDs) or renters are hard to control their rooftop; and a homeowner is planning to move out in the near future. In this regard, Noll et al. (2014) suggested to focus on MUD households by encouraging solar cooperatives and community organizations to increase PV adoption. Furthermore, Graziano et al. (2019) suggested that share-ownership initiatives are necessary to include densely populated areas and lower-income areas to promote PV diffusion. As a result, shared solar models could work for those who can’t afford to install PV. By opening the market to these people including low- and moderate-income (LMI) residents, shared solar could represent 32%-49% of the distributed PV market in 2020 with a growing cumulative PV deployment in 2015-2020 by 5.5-11.0 GW and representing \$8.2-$16.3 billions of cumulative investment (Feldman et al. 2015). Therefore, it is important to identify not only the barriers to residential PV adoption but also the barriers to shared solar, which could represent at least 30% and even around 50% of the distributed PV market.
+
+Shared solar is designed to increase access to solar energy and to reduce upfront costs for participants. Thus, it allows a group of citizens to invest in solar that isn’t affixed to their own residence so shared solar avails this technology to a wider demographic (Augustine 2015). Shared solar is a purchasing arrangement in which multiple customers share the electricity or the economic benefits of solar power from a single array. An array is typically built in a single location, and individual customers sign up to own or lease parts of the array, or to purchase (or be credited for) some portion of the electricity generated by the array. Factors to identify from the customers' perspectives are involved with (1) ownership structure of the PV array, (2) how to buy or join shared solar programs, (3) how it would be easy to subscribe or cancel, (4) the rate structure, and (5) financial benefits. 
+
+
+## Barriers to shared solar 
+
+Barriers to shared solar from the developer's perspective are (1) acquiring and retaining customers, (2) dealing with turnover and default risks of customers, and (3) how to bill and credits to customers. For example, involving LMI households may entails financial barriers to the shared solar developer. This is because having LMI communities lead to higher customer acquisition cost, increased project financing cost, subscription management cost, and electricity energy burden. Furthermore, shared solar developer would need to review eligibility verification for LMI community. Compared to residential PV, shared solar has high upfront cost, multi-year payback periods, and high interest for loan. Customer turnover-default risk regarding subscription management is another financial barrier. To reduce the financial barrier resulting from the default, it would be necessary to perform customer eligibility verification based on income and location of the applicants, and whether being in an existing program such as Low Income Home Energy Assistance Program (LIHEAP). LMI housing agencies could be referred to as sureties for qualified LMI participants (NREL 2018).
+
+Shared solar site selection would be the other barrier since location affects subscription and cost of the project. If the site is located within utility service area, while far from LMI community, lower subscription and higher cost would occur. This option is only possible where interaction with net metering is allowed. LMI neighborhood could be the site for shared solar projects leading to a local economy benefit while lack of land availability would be common. Having brown fields for the shared solar site may cause higher development cost and project permit may take longer. Other site options would be on utility grid, public land, and rooftop. Installation on rooftop may be attractive in urban, but needs to consider utility metering policies and higher cost for installation (NREL 2018).
+
+Political and financial barriers vary between states and program models while they are interrelated. Securing available tax benefits is the other barrier. Furthermore, policy landscape depending on jurisdiction, will decide whether electricity generated will be credited to subscribers through NEM, or whether the utility will enter into a power purchase agreement (PPA) to purchase power directly from the energy producer (Augustine and McGavisk 2016). In short, those barriers are (1) occupants not owning the building, (2) lack of access to information, (3) difficulties with application submission, (4) stringent inspection requirements, (5) variation of solar incentives, (6) interconnection and net metering standards from state to state, (7) lack of regulatory clarity, and (8) lack of mandated or recommended guidance on program structure (Augustine and McGavisk 2016).
+
+Bill-credit structure of subscription is a technical barrier since it requires to improve data management of billing and credit software (NREL 2018). For example,  a separate billing software is required for customers to make payments to developers and get credits from utility. For those who cannot separate the billing due to living in master-metered building, direct bill crediting is possible through virtual NEM, which also requires software improvement.
+
+
+## EV charger specific barriers  
+
+Idaho National Laboratories (2015) argued that 85% of all charge events occur at home and 50% of EV owners charge exclusively at home. Therefore, it is important to ensure residential EV charger installed at home and available whenever needed. However, "range anxiety" makes EV adoption hard. Range anxiety is the fear that a vehicle has insufficient range to reach its destination with respect to refueling/recharging time and the availability of refueling infrastructure. Thus, the availability of EV charging infrastructure has a significant effect on EV adoption. For example, the National Renewable Energy Laboratory (NREL 2017) argued that the public perceives a low availability of vehicle chargers and listed this as a barrier to adoption. Therefore, charging opportunities should be ubiquitous, fast, and inexpensive compared to internal combustion engine vehicles (ICEVs) in order to increase EV adoption. 
+
+Availability of parking space is another barrier to install EV chargers. This is because parking space should be available first for a vehicle to be parked during charging. However, MUDs do not mainly have assigned individual parking space, even worse, sometimes no parking lot. Furthermore, renters generally cannot decide to install equipment to the building without permission from the landlord. As a result, some governments legislated to address the issue. For example, in Colorado, a tenant may install EV chargers at its own expense for its own use while the landlord may require reimbursement for the cost of electricity provided by the landlord for the use by the chargers or the landlord may charge a fee for access. This statute guarantees that renters have the right to install an EV charger, and at the same time protects the economic interest of the landlords from potential loss (Findlaw 2019). 
+
+High electrical load would be another barrier with a higher penetration of EVs. This is because increasing EVs would put an additional burden on the power grid by causing congestions in the neighbor. Furthermore, higher demand of EV charging would incur an increment of peak load resulting in reliability issue on the grid and investment on the grid capacity. Therefore, encouraging off-peak EV charging makes charging at home more affordable but also could reduce the cost of utility generation, transmission, and distribution infrastructure. However, Frost et al. (2019) argued that higher EV adoption rate actually pushes down the electricity rate. Synapse Energy Economics performed a study for the two utilities, Pacific Gas & Electric (PG&E) and Southern California Edison (SCE) about the EV customers' impact on the utilities' revenue and cost. Most of EV charge events for those customers were on time-of-use (TOU), which changes the rate depending on a certain time a customer uses electricity and happened at off-peak time. Furthermore, those, who were not on TOU, still consumed less during on-peak, thus there was not much cost incurred to increase the capacity to accommodate the additional EV charging demand. TOU rates over 200 utility companies across the country, serves as the incentive and makes EV charging more affordable (Bradley 2017).
+
+Frequent charging technology update would be other barrier to adoption. As the development of EV charging technologies goes on, the old versions of chargers might be eliminated in the near future. Other barriers are higher price, and lack of education and awareness about EVs (Stumpf 2019). Furthermore, out-of-date policies, rules, or regulations can become other barriers to adoption. This is because the policies have kept changing thus, quite confusing to customers. Moreover, policies are different from state to state. In this regard, local governments have the great potential to influence the adoption and development of EV and EV chargers within their jurisdictions. Much consideration and attention should be given towards local ordinances and administration that can ease the burden of EV adoption or EV charger development (DOE 2012). 
+
+# Reference 
+
+Ajaz, W. (2019). “Resilience, environmental concern, or energy democracy? A panel data analysis of microgrid adoption in the United States.” Energy Research & Social Science, 49, 26–35.
+
+Araújo, K., Boucher, J. L., and Aphale, O. (2019). “A clean energy assessment of early adopters in electric vehicle and solar photovoltaic technology: Geospatial, political and socio-demographic trends in New York.” Journal of Cleaner Production, 216, 99–116.
+
+Augustine, P., and McGavisk, E. (2016). “The next big thing in renewable energy: Shared solar.” The Electricity Journal, 29(4), 36–42.
+
+Baba, H., and Asami, Y. (2017). “Regional Differences in the Socio-economic and Built-environment Factors of Vacant House Ratio as a Key Indicator for Spatial Urban Shrinkage</b>.” Urban and Regional Planning Review, 4(0), 251–267.
+
+Balta-Ozkan, N., Yildirim, J., and Connor, P. M. (2015). “Regional distribution of photovoltaic deployment in the UK and its determinants: A spatial econometric approach.” Energy Economics, 51, 417–429.
+
+Banerjee, S., Carlin, B. P., and Gelfand, A. E. (2014). Hierarchical Modeling and Analysis for Spatial Data. CRC Press.
+
+Besag, J., York, J., and Molli, A. (1991). “Bayesian image restoration, with two applications in spatial statistics.” Annals of the Institute of Statistical Mathematics, 43(1), 1–20.
+
+Bollinger, B., and Gillingham, K. (2012). “Peer Effects in the Diffusion of Solar Photovoltaic Panels.” Marketing Science, INFORMS, 31(6), 900–912.
+
+Bouzarovski, S., and Simcock, N. (2017). “Spatializing energy justice.” Energy Policy, 107, 640–648.
+
+Bouzarovski, S., and Tirado Herrero, S. (2017). “The energy divide: Integrating energy transitions, regional inequalities and poverty trends in the European Union.” European Urban and Regional Studies, 24(1), 69–86.
+
+Brown, A. C. (2016). “The value of solar writ large: A modest proposal for applying ‘value of solar’ analysis and principles to the entire electricity market.” The Electricity Journal, 29(9), 27–30.
+
+Brudermann, T., Reinsberger, K., Orthofer, A., Kislinger, M., and Posch, A. (2013). “Photovoltaics in agriculture: A case study on decision making of farmers.” Energy Policy, 61, 96–103.
+
+Chan, G., Evans, I., Grimley, M., Ihde, B., and Mazumder, P. (2017). “Design choices and equity implications of community shared solar.” The Electricity Journal, 30(9), 37–41.
+
+Chen, W., and Wellman, B. (2004). “THE GLOBAL DIGITAL DIVIDE – WITHIN AND BETWEEN COUNTRIES.” (7), 8.
+
+Curtius, H. C., Hille, S. L., Berger, C., Hahnel, U. J. J., and Wüstenhagen, R. (2018). “Shotgun or snowball approach? Accelerating the diffusion of rooftop solar photovoltaics through peer effects and social norms.” Energy Policy, 118, 596–602.
+
+Darmofal, D. (2015). Spatial Analysis for the Social Sciences. Cambridge University Press.
+
+Dharshing, S. (2017). “Household dynamics of technology adoption: A spatial econometric analysis of residential solar photovoltaic (PV) systems in Germany.” Energy Research & Social Science, 23, 113–124.
+
+“Diffusion of innovations. BY Everett M. Rogers. The Free Press of Glencoe Division of The Macmillan Co., 60 Fifth Avenue, New York 11, N. Y., 1962. xiii + 367 pp. 14 × 21 cm. Price $6.50.” (1963). Journal of Pharmaceutical Sciences, 52(6), 612–612.
+
+Drury, E., Miller, M., Macal, C. M., Graziano, D. J., Heimiller, D., Ozik, J., and Perry IV, T. D. (2012). “The transformation of southern California’s residential photovoltaics market through third-party ownership.” Energy Policy, 42, 681–690.
+
+Dubey, A., Santoso, S., and Maitra, A. (2015). “Understanding photovoltaic hosting capacity of distribution circuits.” 2015 IEEE Power Energy Society General Meeting, 1–5.
+
+ESIG. (2019). “Toward 100% Renewable Energy Pathways: Key Research Needs.” ENERGY SYSTEMS INTEGRATION GROUP.
+
+Fotheringham, A. S., Brunsdon, C., and Charlton, M. (2003).
+
+Geographically Weighted Regression: The Analysis of Spatially Varying Relationships. John Wiley & Sons.
+
+Frost, J., Whited, M., and Allison, A. (2019). “Electric Vehicles Are Driving Electric Rates Down.” synapse-energy.
+
+Fuller, S., and McCauley, D. (2016). “Framing energy justice: perspectives from activism and advocacy.” Energy Research & Social Science, 11, 1–8.
+
+Funkhouser, E., Blackburn, G., Magee, C., and Rai, V. (2015). “Business model innovations for deploying distributed generation: The emerging landscape of community solar in the U.S.” Energy Research & Social Science, 10, 90–101.
+
+Gillingham, K., Harding, M., and Rapson, D. (2012). “Split Incentives in Residential Energy Consumption.” The Energy Journal, International Association for Energy Economics, 33(2), 37–62.
+
+Gilson, E. (2013). “The Ethics of Vulnerability | A Feminist Analysis of Social Life and Practice | Taylor & Francis Group.” <https://www.taylorfrancis.com/books/9780203078136> (Jun. 13, 2019).
+
+Goldthau, A. (2014). “Rethinking the governance of energy infrastructure: Scale, decentralization and polycentrism.” Energy Research & Social Science, 1, 134–140.
+
+Gollini, I., Lu, B., Charlton, M., Brunsdon, C., and Harris, P. (2014). “GWmodel: an R Package for Exploring Spatial Heterogeneity using Geographically Weighted Models.” arXiv:1306.0413 [stat].
+
+Graziano, M., Fiaschetti, M., and Atkinson-Palombo, C. (2019). “Peer effects in the adoption of solar energy technologies in the United States: An urban case study.” Energy Research & Social Science, 48, 75–84.
+
+Graziano, M., and Gillingham, K. (2015). “Spatial patterns of solar photovoltaic system adoption: The influence of neighbors and the built environment.” Journal of Economic Geography, Oxford Academic, 15(4), 815–839.
+
+Heffron, R. J., and McCauley, D. (2017). “The concept of energy justice across the disciplines.” Energy Policy, 105, 658–667.
+
+Heiskanen, E., and Matschoss, K. (2017). “Understanding the uneven diffusion of building-scale renewable energy systems: A review of household, local and country level factors in diverse European countries.” Renewable and Sustainable Energy Reviews, 75, 580–591.
+
+Heymann, F., Lopes, M., vom Scheidt, F., Silva, J. M., Duenas, P., Soares, F. J., and Miranda, V. (2019). “DER adopter analysis using spatial autocorrelation and information gain ratio under different census-data aggregation levels.” IET Renewable Power Generation.
+
+Hirsch, A., Parag, Y., and Guerrero, J. (2018). “Microgrids: A review of technologies, key drivers, and outstanding issues.” Renewable and Sustainable Energy Reviews, 90, 402–411.
+
+Hofierka, J., Kaňuk, J., and Gallay, M. (2014). “The Spatial Distribution of Photovoltaic Power Plants in Relation to Solar Resource Potential: The Case of the Czech Republic and Slovakia.” Moravian Geographical Reports, Sciendo, 22(2), 26–33.
+
+Irfan, U. (2018). “Puerto Rico and the US Virgin Islands are in the longest blackout in US history - Vox.” <https://www.vox.com/energy-and-environment/2017/10/30/16560212/puerto-rico-longest-blackout-in-us-history-hurricane-maria-grid-electricity> (May 25, 2018).
+
+Jean, N., Burke, M., Xie, M., Davis, W. M., Lobell, D. B., and Ermon, S. (2016). “Combining satellite imagery and machine learning to predict poverty.” Science, 353(6301), 790–794.
+
+Jenkins, K., McCauley, D., Heffron, R., Stephan, H., and Rehner, R. (2016). “Energy justice: A conceptual review.” Energy Research & Social Science, 11, 174–182.
+
+Karteris, M., and Papadopoulos, A. M. (2012). “Residential photovoltaic systems in Greece and in other European countries: a comparison and an overview.” Advances in Building Energy Research, Taylor & Francis, 6(1), 141–158.
+
+Keirstead, J. (2007). “Behavioural responses to photovoltaic systems in the UK domestic sector.” Energy Policy, 35(8), 4128–4141.
+
+Lee, M., Hong, T., Jeong, J., and Jeong, K. (2018). “Development of a rooftop solar photovoltaic rating system considering the technical and economic suitability criteria at the building level.” Energy, 160, 213–224.
+
+Lin, S., Fletcher, B. A., Luo, M., Chinery, R., and Hwang, S.-A. (2011). “Health Impact in New York City During the Northeastern Blackout of 2003.” Public Health Reports, 126(3), 384–393.
+
+Lin, Y., and Bie, Z. (2016). “Study on the Resilience of the Integrated Energy System.” Energy Procedia, 103, 171–176.
+
+Litjens, G. B. M. A., Kausika, B. B., Worrell, E., and van Sark, W. G. J. H. M. (2018). “A spatio-temporal city-scale assessment of residential photovoltaic power integration scenarios.” Solar Energy, 174, 1185–1197.
+
+Lukanov, B. R., and Krieger, E. M. (2019). “Distributed solar and environmental justice: Exploring the demographic and socio-economic trends of residential PV adoption in California.” Energy Policy, 134, 110935.
+
+Mackenzie, C. (2013). “Vulnerability: New Essays in Ethics and Feminist Philosophy - Google Books.” <https://books.google.com/books?hl=en&lr=&id=6W9MAQAAQBAJ&oi=fnd&pg=PP1&dq=vulnerability+ethics&ots=CybV1ADLth&sig=fCvM7G6Oy-pW32O-Hkp3_22uhPw#v=onepage&q=vulnerability%20ethics&f=false> (Jun. 13, 2019).
+
+Mah, D. N., Wang, G., Lo, K., Leung, M. K. H., Hills, P., and Lo, A. Y. (2018). “Barriers and policy enablers for solar photovoltaics (PV) in cities: Perspectives of potential adopters in Hong Kong.” Renewable and Sustainable Energy Reviews, 92, 921–936.
+
+Martinopoulos, G., and Tsalikis, G. (2018). “Diffusion and adoption of solar energy conversion systems – The case of Greece.” Energy, 144, 800–807.
+
+Michaud, G. (2018). “Deploying solar energy with community choice aggregation: A carbon fee model.” The Electricity Journal, 31(10), 32–38.
+
+Moran, P. A. P. (1948). “The Interpretation of Statistical Maps.” Journal of the Royal Statistical Society. Series B (Methodological), [Royal Statistical Society, Wiley], 10(2), 243–251.
+
+Muchunku, C., Ulsrud, K., Palit, D., and Jonker‐Klunne, W. (2018). “Diffusion of solar PV in East Africa: What can be learned from private sector delivery models?” WIREs Energy and Environment, 7(3).
+
+Müller, S., and Rode, J. (2013). “The adoption of photovoltaic systems in Wiesbaden, Germany.” Economics of Innovation and New Technology, Routledge, 22(5), 519–535.
+
+Nolan, J. M., Schultz, P. W., Cialdini, R. B., Goldstein, N. J., and Griskevicius, V. (2008). “Normative Social Influence is Underdetected.” Personality and Social Psychology Bulletin, SAGE Publications Inc, 34(7), 913–923.
+
+Noll, D., Dawes, C., and Rai, V. (2014). “Solar Community Organizations and active peer effects in the adoption of residential PV.” Energy Policy, 67, 330–343.
+
+Palm, A. (2016). “Local factors driving the diffusion of solar photovoltaics in Sweden: A case study of five municipalities in an early market.” Energy Research & Social Science, 14, 1–12.
+
+Poruschi, L., and Ambrey, C. L. (2019). “Energy justice, the built environment, and solar photovoltaic (PV) energy transitions in urban Australia: A dynamic panel data analysis.” Energy Research & Social Science, 48, 22–32.
+
+Rai, V., and Robinson, S. A. (2013). “Effective information channels for reducing costs of environmentally- friendly technologies: evidence from residential PV markets.” Environmental Research Letters, 8(1), 014044.
+
+Robles, F., Davis, K., Fink, S., and Almukhtar, S. (2017). “Official Toll in Puerto Rico: 64. Actual Deaths May Be 1,052.” The New York Times.
+
+Rue, H., and Held, L. (2005). Gaussian Markov Random Fields: Theory and Applications. CRC Press.
+
+Rue, H., Martino, S., and Chopin, N. (2009). “Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations.” Journal of the Royal Statistical Society: Series B (Statistical Methodology), 71(2), 319–392.
+
+Sánchez-Lozano, J. M., Teruel-Solano, J., Soto-Elvira, P. L., and Socorro García-Cascales, M. (2013). “Geographical Information Systems (GIS) and Multi-Criteria Decision Making (MCDM) methods for the evaluation of solar farms locations: Case study in south-eastern Spain.” Renewable and Sustainable Energy Reviews, 24, 544–556.
+
+Schaffer, A. J., and Brun, S. (2015). “Beyond the sun—Socioeconomic drivers of the adoption of small-scale photovoltaic installations in Germany.” Energy Research & Social Science, 10, 220–227.
+
+Scott, J., and Carrington, P. J. (2011). The SAGE Handbook of Social Network Analysis. SAGE Publications, London, UNITED KINGDOM.
+
+Seel, J., Barbose, G. L., and Wiser, R. H. (2014). “An analysis of residential PV system price differences between the United States and Germany.” Energy Policy, 69, 216–226.
+
+Shahidehpour, M., liu,  xindong, Li, Z., and Cao, Y. (2017). “Microgrids for Enhancing the Power Grid Resilience in Extreme Conditions.” IEEE Transactions on Smart Grid, 1–1.
+
+Shang, L., Lee, H. W., Dermisi, S., and Choe, Y. (2020). “Impact of energy benchmarking and disclosure policy on office buildings.” Journal of Cleaner Production, 250, 119500.
+
+Sharifi, A., and Yamagata, Y. (2016). “Principles and criteria for assessing urban energy resilience: A literature review.” Renewable and Sustainable Energy Reviews, 60, 1654–1677.
+
+Sijm, J. P. M. (n.d.). “Cost and revenue related impacts of integrating electricity from variable renewable energy into the power system - A review of recent literature.” 52.
+
+Sovacool, B. K., Burke, M., Baker, L., Kotikalapudi, C. K., and Wlokas, H. (2017). “New frontiers and conceptual frameworks for energy justice.” Energy Policy, 105, 677–691.
+
+Sovacool, B. K., and Dworkin, M. H. (2015). “Energy justice: Conceptual insights and practical applications.” Applied Energy, 142, 435–444.
+
+Strupeit, L., and Palm, A. (2016). “Overcoming barriers to renewable energy diffusion: business models for customer-sited solar photovoltaics in Japan, Germany and the United States.” Journal of Cleaner Production, 123, 124–136.
+
+Tuffner, F., Chassin, F., Kintner-Meyer, M., and Gowri, K. (n.d.). “Utilizing Electric Vehicles to Assist Integration of Large Penetrations of Distributed Photovoltaic Generation.” 42.
+
+van der Kam, M. J., Meelen, A. A. H., van Sark, W. G. J. H. M., and Alkemade, F. (2018). “Diffusion of solar photovoltaic systems and electric vehicles among Dutch consumers: Implications for the energy transition.” Energy Research & Social Science, 46, 68–85.
+
+van der Kam, M., and van Sark, W. (2015). “Smart charging of electric vehicles with photovoltaic power and vehicle-to-grid technology in a microgrid; a case study.” Applied Energy, 152, 20–30.
+
+Vithayasrichareon, P., Mills, G., and MacGill, I. F. (2015). “Impact of Electric Vehicles and Solar PV on Future Generation Portfolio Investment.” IEEE Transactions on Sustainable Energy, 6(3), 899–908.
+
+Walter, R., Evans, A., and Atherwood, S. (2016). “Addressing the Affordable Housing Crisis for Vulnerable Renters: Insights From Broward County on an Affordable Housing Acquisition Tool.” Housing Policy Debate, 26(1), 123–149.
+
+Walter, R. J., and Li, Y. (2014). “Moving to Opportunity? An Examination of Housing Choice Vouchers on Urban Poverty Deconcentration in South Florida.”
+
+Wang, R., Walter, R. J., Arafat, A. A., Ding, X., and Naji, A. A. (2017). “Examining Neighborhood Opportunity and Locational Outcomes for Housing Choice Voucher Recipients: A Comparative Study between Duval County, Florida, and Bexar County, Texas: EXAMINING NEIGHBORHOOD OPPORTUNITY.” City & Community, 16(4), 421–446.
+
+Wang, S., and Reed, D. A. (2017). “Vulnerability and Robustness of Civil Infrastructure Systems to Hurricanes.” Frontiers in Built Environment, 3.
+
+Wolske, K. S., Todd, A., Rossol, M., McCall, J., and Sigrin, B. (2018). “Accelerating demand for residential solar photovoltaics: Can simple framing strategies increase consumer interest?” Global Environmental Change, 53, 68–77.
+
+Wüstenhagen, R., Wolsink, M., and Bürer, M. J. (2007). “Social acceptance of renewable energy innovation: An introduction to the concept.” Energy Policy, 35(5), 2683–2691.
+
+Xu, Y., Fu, C., Kennedy, E., Jiang, S., and Owusu-Agyemang, S. (2018). “The impact of street lights on spatial-temporal patterns of crime in Detroit, Michigan.” Cities, 79, 45–52.
+
+Yamagata, Y., Murakami, D., Minami, K., Arizumi, N., Kuroda, S., Tanjo, T., and Maruyama, H. (2016). “Electricity Self-Sufficient Community Clustering for Energy Resilience.” Energies, 9(7), 543.
+
+Zimmerman, R., Zhu, Q., de Leon, F., and Guo, Z. (2017). “Conceptual modeling framework to integrate resilient and interdependent infrastructure in extreme weather.” Journal of Infrastructure Systems, 23(4), 04017034.
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.13)  24 MAR 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.13)  16 JUN 2020 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,14 +405,206 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip54
 \droptitle=\skip55
 )
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/bookt
+abs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen158
+\lightrulewidth=\dimen159
+\cmidrulewidth=\dimen160
+\belowrulesep=\dimen161
+\belowbottomsep=\dimen162
+\aboverulesep=\dimen163
+\abovetopsep=\dimen164
+\cmidrulesep=\dimen165
+\cmidrulekern=\dimen166
+\defaultaddspace=\dimen167
+\@cmidla=\count267
+\@cmidlb=\count268
+\@aboverulesep=\dimen168
+\@belowrulesep=\dimen169
+\@thisruleclass=\count269
+\@lastruleclass=\count270
+\@thisrulewidth=\dimen170
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtabl
+e.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count271
+\LTcapwidth=\dimen171
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count272
+\LT@rows=\count273
+\c@LT@tables=\count274
+\c@LT@chunks=\count275
+\LT@p@ftn=\toks24
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.st
+y
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box51
+\extrarowheight=\dimen173
+\NC@list=\toks25
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box52
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multi
+row.sty
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count276
+\multirow@dima=\skip63
+\bigstrutjot=\dimen174
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfi
+g.sty
+\wrapoverhang=\dimen175
+\WF@size=\dimen176
+\c@WF@wrappedlines=\count277
+\WF@box=\box53
+\WF@everypar=\toks26
+Package: wrapfig 2003/01/31  v 3.6
+)
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.st
 y
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count267
-\float@exts=\toks24
-\float@box=\box47
-\@float@everytoks=\toks25
-\@floatcapt=\box48
+\c@float@type=\count278
+\float@exts=\toks27
+\float@box=\box54
+\@float@everytoks=\toks28
+\@floatcapt=\box55
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/color
+tbl.sty
+Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color
+.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/c
+olor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+\everycr=\toks29
+\minrowclearance=\skip64
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/pdfls
+cape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscap
+e.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.
+sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.st
+y
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwi
+dth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count279
+\@vwid@loff=\dimen177
+\@vwid@roff=\dimen178
+)
+\c@taburow=\count280
+\tabu@nbcols=\count281
+\tabu@cnt=\count282
+\tabu@Xcol=\count283
+\tabu@alloc=\count284
+\tabu@nested=\count285
+\tabu@target=\dimen179
+\tabu@spreadtarget=\dimen180
+\tabu@naturalX=\dimen181
+\tabucolX=\dimen182
+\tabu@Xsum=\dimen183
+\extrarowdepth=\dimen184
+\abovetabulinesep=\dimen185
+\belowtabulinesep=\dimen186
+\tabustrutrule=\dimen187
+\tabu@thebody=\toks30
+\tabu@footnotes=\toks31
+\tabu@box=\box57
+\tabu@arstrutbox=\box58
+\tabu@hleads=\box59
+\tabu@vleads=\box60
+\tabu@cellskip=\skip65
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable
+/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box61
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable
+x/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/enviro
+n.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/tri
+mspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip66
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.st
+y
+\UL@box=\box62
+\UL@hyphenbox=\box63
+\UL@skip=\skip67
+\UL@hook=\toks32
+\UL@height=\dimen188
+\UL@pe=\count286
+\UL@pixel=\dimen189
+\ULC@box=\box64
+Package: ulem 2012/05/18
+\ULdepth=\dimen190
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makec
+ell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen191
+\c@nlinenum=\count287
+\TeXr@lab=\toks33
+)
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.
+sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/c
+olor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/sc
 rextend.sty
@@ -454,7 +646,7 @@ LaTeX Warning: Command \@footnotemark  has changed.
 
 )
 Package scrextend Info: File `scrsize12pt.clo' used to setup font sizes on inpu
-t line 91.
+t line 106.
 
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/sc
 rsize12pt.clo
@@ -464,29 +656,29 @@ File: scrsize12pt.clo 2018/03/30 v3.25 KOMA-Script font size class option (12pt
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3ba
 ckend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count268
-\l__pdf_internal_box=\box49
+\l__kernel_color_stack_int=\count288
+\l__pdf_internal_box=\box65
 ) (./solar_rmd.aux)
 \openout1 = `solar_rmd.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -521,8 +713,8 @@ LaTeX Font Info:    ... okay on input line 92.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box50
-Package hyperref Info: Link coloring OFF on input line 92.
+\AtBeginShipoutBox=\box66
+Package hyperref Info: Link coloring OFF on input line 107.
 
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/namer
 ef.sty
@@ -536,11 +728,11 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ng/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count269
+\c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 (./solar_rmd.out) (./solar_rmd.out)
 \@outlinefile=\write3
 \openout3 = `solar_rmd.out'.
@@ -565,96 +757,137 @@ G,.JBIG2,.JB2,.eps]
 stopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-))
-<Diffusion.png, id=36, 615.29875pt x 449.68pt>
-File: Diffusion.png Graphic file (type png)
-<use Diffusion.png>
-Package pdftex.def Info: Diffusion.png  used on input line 142.
-(pdftex.def)             Requested size: 469.76314pt x 343.31792pt.
-[1
+)) [1
 
 {c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/p
-dftex.map}] [2 <./Diffusion.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-90.
+dftex.map}]
+<Diffusion.png, id=78, 646.415pt x 466.74374pt>
+File: Diffusion.png Graphic file (type png)
+<use Diffusion.png>
+Package pdftex.def Info: Diffusion.png  used on input line 178.
+(pdftex.def)             Requested size: 352.31386pt x 254.38809pt.
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.210 
+       <./Diffusion.png>] [3] [4]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
+81.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3] [4]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-63.
+) [5]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
+14.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-63.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+14.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-363.
+414.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-363.
+414.
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 363.
+(Font)              <12> on input line 414.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 363.
+(Font)              <8> on input line 414.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 363.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 363
+(Font)              <6> on input line 414.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 414
 .
 
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.
 fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 363
+LaTeX Font Info:    Trying to load font information for U+msb on input line 414
 .
 
 (c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.
 fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5] [6]
-Overfull \hbox (275.17168pt too wide) in paragraph at lines 451--456
-\T1/lmr/m/n/12 (n.d.). NPR.org, []$https : / / www . npr . org / 2019 / 12 / 15
- / 784483810 / powered-[]by-[]faith-[]religious-[]groups-[]emerge-[]as-[]a-[]co
-nduit-[]for-[]a-[]just-[]solar-[]boom$[]
+) [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1286
+\T1/lmr/m/n/12 16560212 / puerto-[]rico-[]longest-[]blackout-[]in-[]us-[]histor
+y-[]hurricane-[]maria-[]grid-[]electricity$[]
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
+[19]
+Underfull \hbox (badness 2142) in paragraph at lines 1333--1338
+[]\T1/lmr/m/n/12 Mackenzie, C. (2013). ``Vul-ner-a-bil-ity: New Es-says in Ethi
+cs and Fem-i-nist
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 1333--1338
+\T1/lmr/m/n/12 Phi-los-o-phy - Google Books.'' []$https : / / books . google . 
+com / books ? hl = en & lr = &id =
+ []
+
+
+Overfull \hbox (2.8103pt too wide) in paragraph at lines 1333--1338
+\T1/lmr/m/n/12 6W9MAQAAQBAJ & oi = fnd & pg = PP1 & dq = vulnerability + ethics
+ & ots = CybV1ADLth &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1333--1338
+\T1/lmr/m/n/12 sig = fCvM7G6Oy-[]pW32O-[]Hkp3 _ 22uhPw # v = onepage & q = vuln
+erability % 20ethics & f =
+ []
+
+[20] [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1479.
+[22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1479.
 (./solar_rmd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1479.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1479.
+
 Package rerunfilecheck Info: File `solar_rmd.out' has not changed.
-(rerunfilecheck)             Checksum: 5A094C852224C49C7E175B9F34C63E47;1617.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
+(rerunfilecheck)             Checksum: D8351EA67B6893D4779D4707A14E2989;2748.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1479.
  ) 
 Here is how much of TeX's memory you used:
- 10827 strings out of 483161
- 161067 string characters out of 5963171
- 419718 words of memory out of 5000000
- 25637 multiletter control sequences out of 15000+600000
- 570249 words of font info for 49 fonts, out of 8000000 for 9000
+ 12778 strings out of 483161
+ 188458 string characters out of 5963171
+ 458851 words of memory out of 5000000
+ 27481 multiletter control sequences out of 15000+600000
+ 574617 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,4n,39p,556b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,39p,559b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
-ts1.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/
-lm/lm-ec.enc}<c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmbx12.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmr12.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf
--dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyT
-eX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on solar_rmd.pdf (7 pages, 146782 bytes).
+mathit.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvi
+ps/lm/lm-rm.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/en
+c/dvips/lm/lm-mathsy.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist
+/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texm
+f-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/Users/Yohan_Min/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Yohan_Min/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/Yohan_Min/AppDa
+ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/Users/Yohan_M
+in/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users
+/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
+c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr
+17.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publi
+c/lm/lmr6.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
+1/public/lm/lmr8.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf-dist/fon
+ts/type1/public/lm/lmri12.pfb><c:/Users/Yohan_Min/AppData/Roaming/TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on solar_rmd.pdf (22 pages, 260786 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 28 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
